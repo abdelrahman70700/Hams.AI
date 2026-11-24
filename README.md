@@ -60,6 +60,37 @@ One `RetrievalEngine` (`hamsrag/retrieval.py`) implements `lexical()`, `hybrid()
 
 Model licences, sizes and CPU/GPU support are listed in [`model_card.md`](model_card.md).
 
+### Why this architecture for Arabic + English
+
+* **Two retrievers that fail differently.** BM25 is exact on product codes, SAR prices, dates and names,
+  which dense models blur; dense retrieval matches meaning across languages (an Arabic question on an
+  English policy), where BM25 finds no shared words. Weighted RRF keeps the strengths of both.
+* **Arabic needs its own text processing.** Orthographic variants (أ/إ/ا, ى/ي, ة/ه), diacritics,
+  tatweel, two digit systems and attached prefixes (`الـpricing`) break exact matching, so BM25 runs on
+  normalised, light-stemmed tokens, while the neural models see near-original text.
+* **One multilingual embedding space.** multilingual-e5 places Arabic and English in the same space, so
+  one index serves both languages and cross-lingual queries; fine-tuning on Arabic/English pairs raised
+  cross-lingual Recall@5 from 0.68 to 0.91.
+* **A cross-encoder reranker** reads question and passage together, which separates the planted
+  near-duplicate policies better than vector similarity alone.
+* **Grounded generation with abstention.** The small local LLM only answers from the top-4 passages,
+  in the question's language, with checked citations, and says "not found" when retrieval confidence
+  is low. Everything fits in 4 GB of VRAM and needs no external API.
+
+### Base models, licences and commercial use
+
+| Role | Base model | Licence | Commercial use | Fine-tuned here |
+|---|---|---|---|---|
+| Embedder | [intfloat/multilingual-e5-base](https://huggingface.co/intfloat/multilingual-e5-base) | MIT | Yes | Yes → [hams-e5-base-ar-en-retrieval](https://huggingface.co/AbdelrahmanHassan/hams-e5-base-ar-en-retrieval) |
+| Reranker | [Alibaba-NLP/gte-multilingual-reranker-base](https://huggingface.co/Alibaba-NLP/gte-multilingual-reranker-base) | Apache-2.0 | Yes | Yes → [hams-gte-reranker-ar-en](https://huggingface.co/AbdelrahmanHassan/hams-gte-reranker-ar-en) |
+| Generator | [Qwen/Qwen3.5-2B](https://huggingface.co/Qwen/Qwen3.5-2B) (GGUF Q4_K_M from [unsloth](https://huggingface.co/unsloth/Qwen3.5-2B-GGUF)) | Apache-2.0 | Yes | No |
+| Keyword index | SQLite FTS5 | Public domain | Yes | — |
+| Vector index | FAISS | MIT | Yes | — |
+| LLM server | llama.cpp | MIT | Yes | — |
+
+The fine-tuned models inherit the base licences. Sizes, CPU/GPU support and quantisation per model are in
+[`model_card.md`](model_card.md).
+
 ---
 
 ## 2. Language coverage
@@ -119,6 +150,12 @@ document overlap.
 | `data/test_conversations.jsonl` | 15 three-turn conversations (45 turns) with follow-up references and language switches |
 
 Generation method and limitations are documented in [`data/DATASET.md`](data/DATASET.md).
+
+**Source and licence.** All documents, questions and reference answers are original synthetic content
+written for this project about a fictional company (drafted with an AI writing assistant, reviewed by
+hand); no third-party text or personal data is included. Licence: **CC BY 4.0**. Public Arabic retrieval
+sets (MIRACL, TyDi, mMARCO) were considered but not used: their available Hugging Face versions no longer
+load with current `datasets` or carry no licence tag.
 
 ---
 
@@ -198,6 +235,26 @@ CPU-only Quick Search: `set HAMS_QUICK_ONLY=1 && .env\python.exe demo\app.py` lo
 `scripts/ingest.py --path <file-or-folder>` (or `POST /ingest {"path": ...}`, `POST /ingest/upload`)
 loads PDF/DOCX/HTML/MD/TXT, chunks, indexes in FTS5 and appends vectors to FAISS. Re-ingesting a
 document replaces its chunks.
+
+### Inference: what each mode does
+
+| Mode | Steps for one query |
+|---|---|
+| Quick Search | detect language → normalise → BM25 over the FTS5 index → ranked snippets with highlights. No neural model, about 1 ms. |
+| Smart AI Search | detect language → BM25 top-50 and dense top-50 in parallel → weighted RRF → top-20 → fine-tuned reranker → confidence gate (below the calibrated threshold: "not found") → top-4 passages as numbered sources → Qwen answers in the question's language, streamed → citations checked against the sources → answer + citations + per-stage latency. |
+| Interactive AI Search | load session history (SQLite) → if the question depends on earlier turns, the LLM rewrites it into a standalone question → same pipeline as Smart AI Search → answer + suggested follow-ups (same LLM call) → turn saved to the session. |
+
+### Demo
+
+1. Run `tools\start_all.bat`. It starts `llama-server` and the API and waits until both are healthy.
+2. Open **http://127.0.0.1:8010**.
+3. Pick a tab: **Quick Search**, **Smart AI Search** or **Interactive** (ask a follow-up such as
+   "وبعد خمس سنوات؟" after a first question). **Before vs after** runs the same question through the base
+   and the fine-tuned retrievers side by side.
+4. Add documents from the left panel (PDF, DOCX, HTML, Markdown or TXT, up to 25 MB); they are
+   searchable right away.
+
+The API documentation is at http://127.0.0.1:8010/docs.
 
 ---
 
