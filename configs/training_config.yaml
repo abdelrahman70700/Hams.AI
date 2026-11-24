@@ -1,0 +1,43 @@
+# Fine-tuning configuration (scripts/train_embeddings.py, scripts/train_reranker.py)
+seed: 42
+embedding:
+  base: e5-base                 # key in configs/models.yaml
+  output: models/e5-base-saraya-ft
+  freeze_word_embeddings: true  # 192M of 278M params; transformer layers are fully trained
+  frozen_embeddings_bf16: true  # store the frozen matrix in bf16 on GPU (saved back as fp32)
+  loss: cached_mnrl             # InfoNCE with in-batch + mined hard negatives (GradCache)
+  batch_size: 64                # in-batch negatives per step (GradCache makes this memory-cheap)
+  mini_batch_size: 16           # GPU micro-batch for GradCache
+  epochs: 4
+  learning_rate: 2.0e-5
+  warmup_ratio: 0.1
+  weight_decay: 0.01
+  max_seq_length: 256
+  scale: 20.0                   # = 1/temperature (0.05)
+  hard_negatives:
+    miner: e5-base              # base model mines negatives
+    top_k: 30                   # candidate pool per query
+    skip_top: 0
+    margin: 0.95                # drop candidates scoring > 0.95 x positive (likely false negatives)
+    per_query: 1
+    train_docs_only: true       # never mine from validation/test documents
+  use_synthetic: true           # include data/synthetic_train.jsonl if present
+reranker:
+  base: gte-rerank
+  output: models/gte-reranker-saraya-ft
+  freeze_word_embeddings: true
+  # Selected recipe (see results/reranker_selection.json). This already-converged reranker is very
+  # sensitive to the learning rate: 1e-5 collapses it, 5e-6 degrades it, 2e-6 improves it.
+  learning_rate: 2.0e-6
+  bf16: false                   # fp32 training
+  epochs: 2
+  eval_steps: 20                # step-wise validation; best checkpoint kept
+  negatives_per_query: 4
+  skip_top: 1                   # skip the highest-ranked non-gold candidate (most likely unlabeled positive)
+  denoise_margin: 1.0           # drop negatives the base reranker scores within 1 logit of the positive
+  miner_embedder: e5-base-ft
+  batch_size: 8
+  gradient_accumulation: 4
+  warmup_ratio: 0.1
+  weight_decay: 0.01
+  max_length: 384

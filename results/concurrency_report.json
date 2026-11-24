@@ -1,0 +1,199 @@
+{
+ "api": "http://127.0.0.1:8010",
+ "levels": {
+  "quick_search": [
+   {
+    "concurrency": 1,
+    "requests": 64,
+    "avg_ms": 4.0,
+    "p50_ms": 3.7,
+    "p95_ms": 5.4,
+    "server_ttft_p95_ms": null,
+    "throughput_qps": 250.29,
+    "failure_rate": 0.0,
+    "gpu_mem_MiB_max": 3820.0,
+    "ram_used_GiB_max": 15.24
+   },
+   {
+    "concurrency": 2,
+    "requests": 64,
+    "avg_ms": 4.0,
+    "p50_ms": 3.8,
+    "p95_ms": 4.9,
+    "server_ttft_p95_ms": null,
+    "throughput_qps": 492.27,
+    "failure_rate": 0.0,
+    "gpu_mem_MiB_max": 3820.0,
+    "ram_used_GiB_max": 15.25
+   },
+   {
+    "concurrency": 4,
+    "requests": 64,
+    "avg_ms": 9.4,
+    "p50_ms": 9.2,
+    "p95_ms": 12.7,
+    "server_ttft_p95_ms": null,
+    "throughput_qps": 404.33,
+    "failure_rate": 0.0,
+    "gpu_mem_MiB_max": 3820.0,
+    "ram_used_GiB_max": 15.25
+   },
+   {
+    "concurrency": 8,
+    "requests": 64,
+    "avg_ms": 27.8,
+    "p50_ms": 24.6,
+    "p95_ms": 60.3,
+    "server_ttft_p95_ms": null,
+    "throughput_qps": 264.26,
+    "failure_rate": 0.0,
+    "gpu_mem_MiB_max": 3820.0,
+    "ram_used_GiB_max": 15.26
+   },
+   {
+    "concurrency": 16,
+    "requests": 128,
+    "avg_ms": 64.5,
+    "p50_ms": 57.7,
+    "p95_ms": 143.6,
+    "server_ttft_p95_ms": null,
+    "throughput_qps": 231.29,
+    "failure_rate": 0.0,
+    "gpu_mem_MiB_max": 3820.0,
+    "ram_used_GiB_max": 15.26
+   }
+  ],
+  "smart_ai_search": [
+   {
+    "concurrency": 1,
+    "requests": 16,
+    "avg_ms": 2227.0,
+    "p50_ms": 2240.7,
+    "p95_ms": 2568.1,
+    "server_ttft_p95_ms": 1925.1,
+    "throughput_qps": 0.45,
+    "failure_rate": 0.0,
+    "gpu_mem_MiB_max": 3843.0,
+    "ram_used_GiB_max": 15.62
+   },
+   {
+    "concurrency": 2,
+    "requests": 16,
+    "avg_ms": 2506.4,
+    "p50_ms": 2307.3,
+    "p95_ms": 3966.1,
+    "server_ttft_p95_ms": 1944.9,
+    "throughput_qps": 0.76,
+    "failure_rate": 0.0,
+    "gpu_mem_MiB_max": 3851.0,
+    "ram_used_GiB_max": 15.57
+   },
+   {
+    "concurrency": 4,
+    "requests": 16,
+    "avg_ms": 3576.0,
+    "p50_ms": 3871.3,
+    "p95_ms": 4478.3,
+    "server_ttft_p95_ms": 3644.2,
+    "throughput_qps": 1.06,
+    "failure_rate": 0.0,
+    "gpu_mem_MiB_max": 3876.0,
+    "ram_used_GiB_max": 15.54
+   },
+   {
+    "concurrency": 8,
+    "requests": 16,
+    "avg_ms": 5528.4,
+    "p50_ms": 5805.4,
+    "p95_ms": 8344.2,
+    "server_ttft_p95_ms": 6178.2,
+    "throughput_qps": 1.33,
+    "failure_rate": 0.0,
+    "gpu_mem_MiB_max": 3912.0,
+    "ram_used_GiB_max": 15.57
+   },
+   {
+    "concurrency": 16,
+    "requests": 32,
+    "avg_ms": 9364.3,
+    "p50_ms": 10861.1,
+    "p95_ms": 12827.0,
+    "server_ttft_p95_ms": 11553.0,
+    "throughput_qps": 1.43,
+    "failure_rate": 0.0,
+    "gpu_mem_MiB_max": 3967.0,
+    "ram_used_GiB_max": 15.72
+   }
+  ],
+  "interactive": [
+   {
+    "concurrency": 1,
+    "requests": 16,
+    "avg_ms": 2502.2,
+    "p50_ms": 2450.4,
+    "p95_ms": 2901.3,
+    "server_ttft_p95_ms": 1806.8,
+    "throughput_qps": 0.4,
+    "failure_rate": 0.0,
+    "gpu_mem_MiB_max": 3967.0,
+    "ram_used_GiB_max": 15.72
+   },
+   {
+    "concurrency": 2,
+    "requests": 16,
+    "avg_ms": 3967.4,
+    "p50_ms": 4076.3,
+    "p95_ms": 6033.3,
+    "server_ttft_p95_ms": 3700.4,
+    "throughput_qps": 0.5,
+    "failure_rate": 0.0,
+    "gpu_mem_MiB_max": 3969.0,
+    "ram_used_GiB_max": 15.71
+   },
+   {
+    "concurrency": 4,
+    "requests": 16,
+    "avg_ms": 5581.9,
+    "p50_ms": 6631.1,
+    "p95_ms": 8573.5,
+    "server_ttft_p95_ms": 4883.9,
+    "throughput_qps": 0.67,
+    "failure_rate": 0.0,
+    "gpu_mem_MiB_max": 3969.0,
+    "ram_used_GiB_max": 15.72
+   },
+   {
+    "concurrency": 8,
+    "requests": 16,
+    "avg_ms": 8671.8,
+    "p50_ms": 9141.0,
+    "p95_ms": 12257.7,
+    "server_ttft_p95_ms": 9547.6,
+    "throughput_qps": 0.74,
+    "failure_rate": 0.0,
+    "gpu_mem_MiB_max": 3969.0,
+    "ram_used_GiB_max": 14.81
+   },
+   {
+    "concurrency": 16,
+    "requests": 32,
+    "avg_ms": 17808.1,
+    "p50_ms": 16637.0,
+    "p95_ms": 31170.2,
+    "server_ttft_p95_ms": 28122.8,
+    "throughput_qps": 0.68,
+    "failure_rate": 0.0,
+    "gpu_mem_MiB_max": 3968.0,
+    "ram_used_GiB_max": 15.13
+   }
+  ]
+ },
+ "server": {
+  "status": "ok",
+  "chunks": 98,
+  "quick_only": false,
+  "embedder": "e5-base-ft",
+  "reranker": "reranker-ft",
+  "llm_up": true
+ }
+}

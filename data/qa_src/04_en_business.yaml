@@ -1,0 +1,181 @@
+- doc: sla_support_tiers_en
+  ev: "Tier: Premium; First response: 1 hour; Resolution target: 8 business hours"
+  a_ar: "تذاكر الدعم المميز (Premium) لها وقت استجابة أولى خلال ساعة واحدة، وهدف حل خلال 8 ساعات عمل."
+  a_en: "Premium support tickets have a 1-hour first response target and an 8-business-hour resolution target."
+  qs:
+    - [en, "What is the SLA for premium support tickets?"]
+    - [en, "How fast does Saraya respond to a Premium tier ticket and how long until it is resolved?"]
+    - [ar, "ما هو وقت الاستجابة والحل لتذاكر الدعم المميز؟"]
+    - [mx, "كم الـSLA حق تذاكر الـpremium support؟"]
+- doc: sla_support_tiers_en
+  ev: "Tier: Enterprise; First response: 15 minutes for P1"
+  a_ar: "في الباقة المؤسسية (Enterprise) تكون الاستجابة الأولى خلال 15 دقيقة لتذاكر P1 وساعة واحدة لـP2–P4، والحل خلال 4 ساعات لـP1 و8 ساعات عمل لـP2–P4."
+  a_en: "Enterprise tier: first response in 15 minutes for P1 and 1 hour for P2–P4; resolution in 4 hours for P1 and 8 business hours for P2–P4."
+  qs:
+    - [en, "What is the response time for a P1 ticket on the Enterprise tier?"]
+    - [ar, "كم وقت حل التذاكر الحرجة P1 لعملاء الباقة المؤسسية؟"]
+    - [mx, "في الـEnterprise tier، كم الـresolution time لتذكرة P1؟"]
+- doc: sla_support_tiers_en
+  ev: "Tier: Standard; First response: 8 business hours"
+  a_ar: "الدعم القياسي (Standard) يرد خلال 8 ساعات عمل ويحل خلال 5 أيام عمل، ويعمل من الأحد إلى الخميس 8:00–17:00 عبر البوابة والبريد، وهو ضمن باقة Starter."
+  a_en: "Standard support responds within 8 business hours and resolves within 5 business days; it covers Sunday–Thursday 8:00–17:00 via portal and email and is included in the Starter plan."
+  qs:
+    - [en, "What support do Starter plan customers get and how fast are tickets resolved?"]
+    - [ar, "ما مستوى الدعم في باقة Starter وما هي أوقات الاستجابة؟"]
+- doc: sla_support_tiers_en
+  ev: "service credit of 5% of that month's subscription fee"
+  a_ar: "إذا فاتت سرايا هدف الحل لتذكرة Premium أو Enterprise يحصل العميل على رصيد خدمة 5% من رسوم الشهر لكل تذكرة بحد أقصى 25%، ويطالب به خلال 30 يوماً عبر البوابة، ولا يشمل الدعم القياسي."
+  a_en: "If a Premium or Enterprise resolution target is missed, the customer gets a 5% service credit of that month's fee per ticket, capped at 25%, claimed within 30 days via the portal; Standard tickets are not eligible."
+  qs:
+    - [en, "What compensation do we get if Saraya misses the SLA?"]
+    - [en, "What is the maximum service credit per month?"]
+    - [ar, "هل يوجد تعويض إذا لم يتم حل التذكرة ضمن وقت الـSLA؟"]
+- doc: enterprise_package_pricing_en
+  ev: "Premium support for Starter"
+  alt:
+    - {doc: sla_support_tiers_en, ev: "add-on for SAR 1,200/month"}
+  a_ar: "يمكن إضافة الدعم المميز Premium لباقة Starter مقابل 1,200 ريال شهرياً."
+  a_en: "Premium support can be added to the Starter plan for SAR 1,200 per month."
+  qs:
+    - [en, "How much does it cost to add Premium support to a Starter plan?"]
+    - [ar, "بكم إضافة الدعم المميز على باقة Starter؟"]
+- doc: incident_severity_guide_en
+  ev: "P1 – Critical"
+  a_ar: "P1 حرجة: خطر على السلامة أو تعذر استخدام مساحة العمل بالكامل، مثل انهيار وحدة رفوف أو محرك مكتب متوقف بزاوية غير آمنة أو غرفة اجتماعات غير صالحة لاجتماع مجلس إدارة."
+  a_en: "P1 Critical means a safety hazard or complete inability to use a workspace, e.g. a collapsed shelving unit, a desk motor stuck at an unsafe angle, or an unusable meeting room for a scheduled board meeting."
+  qs:
+    - [en, "What counts as a P1 critical incident?"]
+    - [ar, "ما تعريف الحادثة الحرجة P1؟"]
+- doc: incident_severity_guide_en
+  ev: "may adjust it within 30 minutes after review"
+  a_ar: "العميل يقترح الأولوية عند فتح التذكرة، ويمكن لمكتب الخدمة تعديلها خلال 30 دقيقة، وعند الاعتراض يصعد العميل لمدير الحساب أو مدير الحساب التقني لعملاء Enterprise."
+  a_en: "The customer proposes the priority; the service desk can adjust it within 30 minutes, and disagreements go to the account manager (or the Technical Account Manager for Enterprise)."
+  qs:
+    - [en, "Who decides the priority of a support ticket?"]
+    - [ar, "من يحدد أولوية التذكرة وهل يمكن تغييرها؟"]
+- doc: incident_severity_guide_en
+  ev: "Head of Customer Operations"
+  a_ar: "مسار التصعيد: موظف مكتب الخدمة، ثم مشرف الوردية بعد فوات هدف الاستجابة، ثم مدير الحساب بعد مرور 50% من وقت الحل، ثم رئيس عمليات العملاء لتذاكر P1 غير المحلولة."
+  a_en: "Escalation path: service desk agent, shift supervisor after the first-response target is missed, account manager after 50% of the resolution time, then Head of Customer Operations for unresolved P1 tickets."
+  qs:
+    - [en, "What is the escalation path for Saraya Business tickets?"]
+    - [ar, "إلى من يتم تصعيد تذكرة P1 لم تحل في الوقت المحدد؟"]
+- doc: enterprise_package_pricing_en
+  ev: "base fee of SAR 18,000 per month covers up to 100 workstations"
+  a_ar: "الباقة المؤسسية تبدأ من 18,000 ريال شهرياً وتغطي حتى 100 مقعد عمل، وكل مقعد إضافي بـ140 ريالاً شهرياً، مع خصم 7% للعملاء في ثلاثة مواقع أو أكثر، والأسعار لا تشمل الضريبة."
+  a_en: "The Enterprise package starts at SAR 18,000/month for up to 100 workstations, plus SAR 140/month per extra workstation, with a 7% discount for three or more sites; prices exclude VAT."
+  qs:
+    - [mx, "أبغى أعرف الـpricing حق الباقة المؤسسية"]
+    - [ar, "كم سعر الباقة المؤسسية لـ120 مقعد عمل؟"]
+    - [en, "How much does the Enterprise package cost per month?"]
+    - [en, "Is there a discount if our company has offices in Riyadh, Jeddah and Dammam?"]
+    - [dia, "وش أسعار الباقة المؤسسية حقتكم؟"]
+- doc: enterprise_package_pricing_en
+  ev: "Plan: Professional; Workstations: 21 to 75; Monthly fee: SAR 7,500"
+  a_ar: "باقة Professional تغطي من 21 إلى 75 مقعداً بسعر 7,500 ريال شهرياً مع دعم Premium وحد أدنى 12 شهراً، وباقة Starter حتى 20 مقعداً بسعر 2,900 ريال."
+  a_en: "Professional covers 21–75 workstations for SAR 7,500/month with Premium support and a 12-month minimum; Starter covers up to 20 for SAR 2,900."
+  qs:
+    - [en, "Which plan fits a company with 40 employees and what does it cost?"]
+    - [ar, "كم سعر باقة Professional وكم مقعد تغطي؟"]
+    - [mx, "الـStarter plan كم سعرها الشهري؟"]
+- doc: enterprise_package_pricing_en
+  ev: "Acoustic phone booth"
+  a_ar: "الإضافات: الدعم المميز لباقة Starter بـ1,200 ريال شهرياً، وباقة غرفة الاجتماعات بـ650 ريالاً للغرفة شهرياً، وكبينة الهاتف العازلة بـ480 ريالاً شهرياً، والتركيب في عطلة نهاية الأسبوع بـ1,500 ريال للزيارة."
+  a_en: "Add-ons: Premium support for Starter SAR 1,200/month, meeting room package SAR 650/room/month, acoustic phone booth SAR 480/month, weekend installation SAR 1,500/visit."
+  qs:
+    - [en, "How much is an acoustic phone booth per month?"]
+    - [ar, "كم تكلفة إضافة غرفة اجتماعات للاشتراك؟"]
+- doc: enterprise_package_pricing_en
+  ev: "Annual prepayment receives a 5% discount"
+  a_ar: "تصدر الفواتير شهرياً مقدماً وتسدد خلال 30 يوماً، والدفع السنوي المقدم يحصل على خصم 5%."
+  a_en: "Invoices are issued monthly in advance and payable within 30 days; annual prepayment gets a 5% discount."
+  qs:
+    - [en, "Is there a discount for paying the subscription annually?"]
+    - [ar, "هل يوجد خصم عند دفع الاشتراك سنوياً مقدماً؟"]
+- doc: enterprise_package_pricing_en
+  ev: "Preventive maintenance visits"
+  a_ar: "زيارات الصيانة الوقائية: مرتين سنوياً في Starter، وكل ربع سنة في Professional، وشهرياً في Enterprise."
+  a_en: "Preventive maintenance: twice a year on Starter, quarterly on Professional and monthly on Enterprise."
+  qs:
+    - [en, "How often are maintenance visits on the Professional plan?"]
+    - [ar, "كم مرة يزورنا فريق الصيانة في باقة Starter؟"]
+- doc: b2b_contract_terms_en
+  ev: "early termination fee equal to three months"
+  a_ar: "عند إنهاء العقد قبل نهاية المدة الدنيا يدفع العميل رسوم إنهاء مبكر تعادل 3 أشهر من الرسوم الشهرية، إضافة إلى 40% من سعر القطع ذات التشطيب الخاص."
+  a_en: "Early termination costs three months of the current monthly fee, plus 40% of the list price of any custom-finished items."
+  qs:
+    - [en, "What happens if we cancel our Saraya Business contract early?"]
+    - [ar, "كم رسوم إلغاء العقد قبل انتهاء مدته؟"]
+    - [mx, "لو بغينا نسوي early termination للعقد، كم ندفع؟"]
+- doc: b2b_contract_terms_en
+  ev: "at least 60 days before the end of the current term"
+  a_ar: "تتجدد العقود تلقائياً لمدة 12 شهراً ما لم يرسل أحد الطرفين إشعاراً كتابياً قبل 60 يوماً على الأقل من نهاية المدة."
+  a_en: "Contracts auto-renew for 12 months unless either party gives written notice at least 60 days before the term ends."
+  qs:
+    - [en, "How much notice is needed to stop the contract from renewing?"]
+    - [ar, "هل يتجدد عقد Saraya Business تلقائياً وكيف أوقف التجديد؟"]
+- doc: b2b_contract_terms_en
+  ev: "no more than 6% per year"
+  a_ar: "الأسعار ثابتة خلال المدة الدنيا، وعند التجديد لا تزيد أكثر من 6% سنوياً مع إشعار قبل 90 يوماً."
+  a_en: "Prices are fixed during the minimum term; at renewal they can rise by at most 6% per year with 90 days' notice."
+  qs:
+    - [en, "Can Saraya increase our subscription price at renewal?"]
+    - [ar, "ما الحد الأقصى لزيادة السعر عند تجديد العقد؟"]
+- doc: b2b_contract_terms_en
+  ev: "Reductions of up to 20% of workstations"
+  a_ar: "يمكن إضافة مقاعد في أي وقت وتركب خلال 10 أيام عمل، ويسمح بتخفيض حتى 20% من المقاعد مرة في السنة دون غرامة بإشعار 30 يوماً."
+  a_en: "Workstations can be added anytime (installed within 10 business days); reductions of up to 20% are allowed once per contract year without penalty with 30 days' notice."
+  qs:
+    - [en, "Can we reduce the number of workstations during the contract?"]
+    - [ar, "هل يمكن تقليل عدد المقاعد في منتصف العقد؟"]
+- doc: b2b_portal_user_guide_mx
+  ev: "يتم قفل الحساب لمدة 30 دقيقة"
+  a_ar: "عند إدخال كلمة مرور خاطئة 5 مرات يقفل حساب البوابة لمدة 30 دقيقة، والمصادقة الثنائية إلزامية للمستخدمين بصلاحية Admin."
+  a_en: "After 5 wrong passwords the portal account is locked for 30 minutes; MFA is mandatory for Admin users."
+  qs:
+    - [ar, "حسابي في البوابة انقفل بعد محاولات دخول خاطئة، متى يفتح؟"]
+    - [en, "How long is a Saraya Business Portal account locked after failed logins?"]
+    - [mx, "الـaccount حقي في الـportal صار locked، كم لازم أنتظر؟"]
+- doc: b2b_portal_user_guide_mx
+  ev: "Starter إضافة حتى 5 مستخدمين"
+  a_ar: "حساب Starter يضيف حتى 5 مستخدمين، وProfessional حتى 25، وEnterprise عدد غير محدود."
+  a_en: "Starter accounts can add up to 5 portal users, Professional up to 25, and Enterprise unlimited."
+  qs:
+    - [en, "How many portal users can a Professional plan customer add?"]
+    - [ar, "كم عدد المستخدمين المسموح في بوابة الأعمال لباقة Starter؟"]
+- doc: b2b_portal_user_guide_mx
+  ev: "رقم الأصل Asset Tag"
+  a_ar: "لفتح تذكرة: Support ثم New Ticket، واختيار الموقع والطابق ورقم الأصل Asset Tag الذي يبدأ بـSB-، ثم الأولوية وإرفاق صورة، ويصل بريد برقم TCK-2026-XXXXX."
+  a_en: "To open a ticket: Support > New Ticket, choose the site, floor and the Asset Tag (starting with SB-), set priority P1–P4, attach a photo; you get a TCK-2026-XXXXX number by email."
+  qs:
+    - [en, "How do I open a support ticket in the business portal?"]
+    - [ar, "أين أجد رقم الأصل عند فتح تذكرة دعم؟"]
+    - [mx, "وش هو الـAsset Tag ووين ألقاه؟"]
+- doc: b2b_onboarding_mx
+  ev: "خلال 5 أيام عمل من توقيع العقد"
+  a_ar: "يعقد اجتماع الـKickoff خلال 5 أيام عمل من توقيع العقد بحضور مدير الحساب التقني ومدير المشروع وممثل المرافق من العميل."
+  a_en: "The kickoff meeting is held within 5 business days of contract signing with the Technical Account Manager, the project manager and the customer's facilities representative."
+  qs:
+    - [ar, "متى يعقد اجتماع البداية بعد توقيع عقد الباقة المؤسسية؟"]
+    - [en, "When does the Enterprise onboarding kickoff happen?"]
+- doc: b2b_onboarding_mx
+  ev: "يحق للعميل طلب تعديلين على التصميم مجانا"
+  a_ar: "بعد المعاينة يقدم مخطط الـLayout وتصور 3D خلال 10 أيام عمل، ويحق للعميل طلب تعديلين على التصميم مجاناً."
+  a_en: "After the site survey, the layout PDF and 3D render are delivered within 10 business days, and two design revisions are free."
+  qs:
+    - [en, "How many free design revisions are included in enterprise onboarding?"]
+    - [ar, "كم تعديل مجاني على تصميم المكتب؟"]
+- doc: b2b_onboarding_mx
+  ev: "يبدأ احتساب الاشتراك الشهري ومدة العقد من تاريخ اكتمال التركيب"
+  a_ar: "يبدأ احتساب الاشتراك ومدة العقد من تاريخ اكتمال التركيب بعد جولة الفحص وتوقيع محضر الاستلام، وتبدأ مراجعات QBR بعد 90 يوماً."
+  a_en: "Billing and the contract term start on the installation completion date after the snagging walkthrough; QBRs start after 90 days."
+  qs:
+    - [en, "When does billing start for a new Enterprise customer?"]
+    - [ar, "من متى يبدأ احتساب رسوم الاشتراك الشهري؟"]
+- doc: b2b_onboarding_mx
+  ev: "مدة التركيب المعتادة 4 أسابيع لموقع حتى 200 Workstation"
+  a_ar: "مدة التركيب المعتادة 4 أسابيع لموقع حتى 200 مقعد عمل، ويمكن التركيب في عطلة نهاية الأسبوع مقابل رسوم إضافية."
+  a_en: "Installation usually takes 4 weeks for a site of up to 200 workstations; weekend installation is possible for an extra fee."
+  qs:
+    - [en, "How long does installation take for a site with 150 workstations?"]
+    - [ar, "كم أسبوع يستغرق تركيب أثاث مكتب فيه 180 موظف؟"]

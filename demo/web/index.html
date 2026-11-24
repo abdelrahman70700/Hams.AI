@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saraya knowledge bank</title>
+<style>
+:root{
+  --paper:#EDF0EE; --vellum:#F8F9F7; --ink:#17202A; --muted:#56626C; --rule:#CBD3D0;
+  --lapis:#1E4A8A; --lapis-wash:#E3EAF4; --gold:#8C6514; --gold-wash:#F4EBD6; --madder:#9B3A4E; --madder-wash:#F5E6EA;
+  --ui:"Bahnschrift","Segoe UI","DIN Alternate","Helvetica Neue",Arial,sans-serif;
+  --read-en:"Sitka Text","Sitka","Iowan Old Style","Georgia",serif;
+  --read-ar:"Sakkal Majalla","Traditional Arabic","Noto Naskh Arabic","Geeza Pro",serif;
+  --ui-ar:"Segoe UI","Noto Sans Arabic","Geeza Pro",sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font:15px/1.5 var(--ui);font-feature-settings:"tnum" 1}
+[dir=rtl]{font-family:var(--ui-ar)}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--lapis);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* header */
+.top{display:flex;align-items:center;gap:24px;padding:14px 28px;border-bottom:1px solid var(--rule);background:var(--vellum)}
+.brand{display:flex;flex-direction:column;line-height:1.15;min-width:190px}
+.brand b{font-size:18px;font-weight:600;letter-spacing:.01em}
+.brand span{font:15px/1.2 var(--read-ar);color:var(--muted)}
+.modes{display:flex;gap:4px;padding:4px;border-radius:10px;background:var(--paper)}
+.modes button{border:0;background:none;padding:7px 14px;border-radius:7px;cursor:pointer;color:var(--muted);font-weight:500}
+.modes button[aria-pressed=true]{background:var(--vellum);color:var(--lapis);box-shadow:0 0 0 1px var(--rule)}
+.modes button:disabled{opacity:.45;cursor:not-allowed}
+.status{margin-left:auto;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--rule)}
+.dot.ok{background:#2F7D5B}.dot.warn{background:var(--gold)}.dot.bad{background:var(--madder)}
+
+/* layout */
+.shell{display:grid;grid-template-columns:300px minmax(0,1fr);min-height:calc(100vh - 63px)}
+.lib{border-right:1px solid var(--rule);padding:22px 20px;background:var(--vellum);display:flex;flex-direction:column;gap:16px;position:sticky;top:0;height:100vh;align-self:start}
+.lib h2{font-size:14px;font-weight:600;margin:0}
+.drop{border:1.5px dashed var(--rule);border-radius:10px;padding:16px;text-align:center;font-size:13px;color:var(--muted);cursor:pointer;transition:border-color .15s,background .15s}
+.drop:hover,.drop.over{border-color:var(--lapis);background:var(--lapis-wash);color:var(--ink)}
+.drop strong{display:block;color:var(--ink);font-weight:600;margin-bottom:2px}
+.uploads{display:flex;flex-direction:column;gap:6px;font-size:13px}
+.up{display:flex;justify-content:space-between;gap:8px}
+.up .n{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.up .s{color:var(--muted);flex:none}.up .s.err{color:var(--madder)}.up .s.ok{color:#2F7D5B}
+.filter{width:100%;padding:8px 10px;border:1px solid var(--rule);border-radius:8px;background:var(--paper)}
+.docs{list-style:none;margin:0;padding:0;overflow:auto;flex:1;min-height:120px}
+.docs li{padding:8px 0;border-bottom:1px solid var(--paper);font-size:13px}
+.docs .t{display:block;font-weight:500}
+.docs .f{color:var(--muted);font-size:12px}
+.tag{display:inline-block;font-size:11px;padding:0 6px;border-radius:4px;background:var(--paper);color:var(--muted);margin-inline-end:6px}
+
+main{padding:28px clamp(16px,4vw,56px) 80px;max-width:1080px;width:100%}
+.ask{display:flex;gap:10px;align-items:stretch}
+.ask input{flex:1;padding:14px 16px;font-size:17px;border:1px solid var(--rule);border-radius:10px;background:var(--vellum)}
+.ask input:focus{border-color:var(--lapis);outline:none;box-shadow:0 0 0 3px var(--lapis-wash)}
+.go{border:0;border-radius:10px;padding:0 22px;background:var(--lapis);color:#fff;font-weight:600;cursor:pointer}
+.go:disabled{opacity:.55;cursor:default}
+.hint{margin:10px 2px 0;font-size:13px;color:var(--muted);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.linkish{border:0;background:none;color:var(--lapis);cursor:pointer;padding:0;font-size:13px}
+
+.thread{margin-top:28px;display:flex;flex-direction:column;gap:34px}
+.empty{padding:28px 0;color:var(--muted)}
+.empty h1{font-size:22px;font-weight:600;color:var(--ink);margin:0 0 6px}
+.empty p{margin:0 0 18px;max-width:60ch}
+.tries{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--rule);background:var(--vellum);border-radius:999px;padding:6px 12px;cursor:pointer;font-size:14px}
+.chip:hover{border-color:var(--lapis);color:var(--lapis)}
+
+/* a turn */
+.q{font-size:15px;color:var(--muted);padding-inline-start:12px;border-inline-start:3px solid var(--lapis);margin-bottom:12px}
+.q .rw{display:block;font-size:13px;margin-top:3px}
+.page{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:28px;align-items:start}
+.answer{font:18px/1.65 var(--read-en);max-width:68ch;white-space:pre-wrap}
+.answer[dir=rtl]{font:23px/1.75 var(--read-ar)}
+.answer.nf{color:var(--madder);background:var(--madder-wash);padding:12px 16px;border-radius:8px;font-family:var(--ui);font-size:16px}
+.answer.nf[dir=rtl]{font-family:var(--ui-ar)}
+.cm{font:600 .62em/1 var(--ui);color:var(--gold);vertical-align:super;border:0;background:none;padding:0 1px;cursor:pointer}
+.cm.lit{background:var(--gold-wash);border-radius:3px}
+.caret::after{content:"";display:inline-block;width:.45em;height:1em;margin-inline-start:2px;background:var(--lapis);vertical-align:-.1em;animation:blink 1s steps(2) infinite}
+@keyframes blink{50%{opacity:0}}
+.margin{display:flex;flex-direction:column;gap:12px;font-size:13px}
+.note{border-inline-start:2px solid var(--gold-wash);padding-inline-start:10px;transition:border-color .15s,background .15s}
+.note.lit{border-color:var(--gold);background:var(--gold-wash)}
+.note .h{display:flex;gap:6px;align-items:baseline;font-weight:600}
+.note .num{color:var(--gold)}
+.note .sn{color:var(--muted);margin-top:3px;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.note .src{color:var(--muted);font-size:12px;margin-top:4px}
+.note .bar{height:3px;background:var(--paper);border-radius:2px;margin-top:6px;overflow:hidden}
+.note .bar i{display:block;height:100%;background:var(--gold)}
+.inferred{font-size:12px;color:var(--muted);margin-top:8px}
+.fups{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+
+/* timing strip */
+.timing{margin-top:18px;max-width:68ch}
+.strip{display:flex;height:6px;border-radius:3px;overflow:hidden;background:var(--paper)}
+.strip span{height:100%}
+.legend{display:flex;flex-wrap:wrap;gap:4px 16px;margin-top:6px;font-size:12px;color:var(--muted)}
+.legend i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-inline-end:5px;vertical-align:0}
+.legend b{color:var(--ink);font-weight:600}
+
+/* quick results */
+.results{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.results li{padding:14px 0;border-bottom:1px solid var(--rule)}
+.results .rt{font-weight:600}
+.results .rs{color:var(--muted);font-size:13px}
+.results .sn{margin-top:4px;font:16px/1.6 var(--read-en)}
+.results .sn[dir=rtl]{font:20px/1.7 var(--read-ar)}
+.results mark{background:var(--gold-wash);color:inherit;border-radius:2px}
+.results .meta{font-size:12px;color:var(--muted);margin-top:4px}
+.err{color:var(--madder);background:var(--madder-wash);padding:12px 16px;border-radius:8px}
+
+/* before vs after */
+.cmp-note{font-size:13px;color:var(--muted);margin:0 0 14px;max-width:80ch}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+.side{background:var(--vellum);border:1px solid var(--rule);border-radius:10px;padding:16px 18px}
+.side h3{margin:0;font-size:16px;font-weight:600}
+.side.before h3{color:var(--muted)}
+.side.after{border-color:var(--lapis);box-shadow:0 0 0 1px var(--lapis-wash)}
+.side.after h3{color:var(--lapis)}
+.side .sub{font-size:12px;color:var(--muted);margin:2px 0 12px}
+.side .nf{font-size:13px;color:var(--madder);background:var(--madder-wash);border-radius:6px;padding:6px 10px;margin-bottom:10px}
+.side ol{list-style:none;margin:0;padding:0}
+.side li{display:grid;grid-template-columns:26px 1fr;gap:0 8px;padding:10px 0;border-top:1px solid var(--paper)}
+.side li .rk{font-weight:600;color:var(--gold);font-size:15px}
+.side li .ti{font-weight:600;font-size:14px}
+.side li .sn{grid-column:2;font:14px/1.55 var(--read-en);color:var(--ink);margin-top:3px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.side li .sn[dir=rtl]{font:18px/1.6 var(--read-ar)}
+.side li .mt{grid-column:2;font-size:12px;color:var(--muted);margin-top:4px;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center}
+.side li .xl{background:var(--gold-wash);color:var(--gold);border-radius:4px;padding:0 6px}
+.side li .both{color:var(--lapis)}
+.side li .rel{display:inline-block;width:60px;height:4px;background:var(--paper);border-radius:2px;overflow:hidden;vertical-align:middle}
+.side li .rel i{display:block;height:100%;background:var(--gold)}
+
+@media (max-width:900px){
+  .cmp{grid-template-columns:1fr}
+  .shell{grid-template-columns:1fr}
+  .lib{border-right:0;border-bottom:1px solid var(--rule);position:static;height:auto}
+  .docs{max-height:220px}
+  .page{grid-template-columns:1fr}
+  .top{flex-wrap:wrap;gap:12px;padding:12px 16px}
+  .status{margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand"><b>Saraya knowledge bank</b><span>بنك المعرفة</span></div>
+  <nav class="modes" aria-label="Search mode">
+    <button data-mode="quick_search">Quick Search</button>
+    <button data-mode="smart_ai_search">Smart AI Search</button>
+    <button data-mode="interactive">Interactive</button>
+    <button data-mode="compare">Before vs after</button>
+  </nav>
+  <div class="status" id="status" role="status"><span class="dot"></span><span>Connecting…</span></div>
+</header>
+
+<div class="shell">
+  <aside class="lib" aria-label="Knowledge bank documents">
+    <h2>Add documents</h2>
+    <label class="drop" id="drop" tabindex="0">
+      <strong>Drop files here or choose files</strong>
+      PDF, Word (DOCX), HTML, Markdown or TXT, up to 25 MB each
+      <input type="file" id="file" class="sr" multiple accept=".pdf,.docx,.html,.htm,.md,.markdown,.txt">
+    </label>
+    <div class="uploads" id="uploads" aria-live="polite"></div>
+    <h2 id="libTitle">Documents</h2>
+    <input class="filter" id="filter" type="search" placeholder="Filter by title or file" aria-label="Filter documents">
+    <ul class="docs" id="docs"></ul>
+  </aside>
+
+  <main>
+    <form class="ask" id="form">
+      <label for="q" class="sr">Question</label>
+      <input id="q" autocomplete="off" placeholder="Ask in Arabic or English">
+      <button class="go" id="go" type="submit">Search</button>
+    </form>
+    <div class="hint"><span id="modeHint"></span><span id="sessBox" hidden><span id="sessLabel"></span> <button class="linkish" id="reset" type="button">Start a new conversation</button></span></div>
+    <section class="thread" id="thread" aria-live="polite"></section>
+  </main>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const isAr = s => (String(s).match(/[؀-ۿ]/g) || []).length > (String(s).match(/[A-Za-z]/g) || []).length;
+const dirOf = s => isAr(s) ? "rtl" : "ltr";
+const ms = v => v >= 1000 ? (v / 1000).toFixed(2) + " s" : Math.round(v) + " ms";
+const LANG = {ar: "Arabic", en: "English", mixed: "Mixed"};
+
+const MODES = {
+  quick_search: {hint: "Keyword search. Instant, works without the GPU.", button: "Search",
+    title: "Find passages by keyword", text: "Ranked passages with their document and page. Arabic spelling variants and English word forms are matched.",
+    tries: ["رسوم التركيب", "warranty", "سياسة الاسترجاع", "SLA premium"]},
+  smart_ai_search: {hint: "One question, one answer written from the documents, with its sources.", button: "Ask",
+    title: "Ask a question", text: "The answer is written only from the knowledge bank, and every claim points to its source. If the documents don't cover it, you'll be told.",
+    tries: ["ما هي سياسة الاسترجاع للطلبات المتأخرة؟", "What is the SLA for premium support tickets?", "أبغى أعرف الـpricing حق الباقة المؤسسية", "What is the maternity leave duration?", "When will the Dammam branch be renovated?"]},
+  interactive: {hint: "A conversation. Follow-up questions can refer to earlier answers.", button: "Send",
+    title: "Have a conversation", text: "Ask, then follow up with \"and how much is it?\" or switch language mid-conversation. The question is rewritten using what was said before.",
+    tries: ["What is the SLA for premium support tickets?", "كم رسوم التركيب؟", "Do you ship to Kuwait and how much does it cost?"]},
+};
+MODES.compare = {hint: "The same question through the original models and the fine-tuned models, side by side.", button: "Compare",
+  title: "Compare before and after fine-tuning",
+  text: "See which sources each version finds. Fine-tuning helped most when the question and the document are in different languages; these examples show it.",
+  tries: ["كم البدل اليومي للانتداب داخل المملكة؟", "What is the phone number of the Olaya branch?", "هل تستخدم سرايا شاحنات كهربائية للتوصيل؟",
+          "Which wardrobe model comes with the Lamar bedroom?", "إذا قدم المؤتمر وجبة الغداء، هل ينقص البدل اليومي؟"]};
+let mode = "smart_ai_search", session = null, busy = false, docs = [];
+
+/* ---------- modes ---------- */
+function setMode(m) {
+  mode = m;
+  document.querySelectorAll(".modes button").forEach(b => b.setAttribute("aria-pressed", b.dataset.mode === m));
+  $("#go").textContent = MODES[m].button;
+  $("#modeHint").textContent = MODES[m].hint;
+  $("#sessBox").hidden = m !== "interactive" || !session;
+  $("#thread").innerHTML = "";
+  showEmpty();
+  $("#q").focus();
+}
+function showEmpty() {
+  const M = MODES[mode];
+  $("#thread").innerHTML = `<div class="empty"><h1>${esc(M.title)}</h1><p>${esc(M.text)}</p>
+    <div class="tries">${M.tries.map(t => `<button class="chip" dir="${dirOf(t)}">${esc(t)}</button>`).join("")}</div></div>`;
+  $("#thread").querySelectorAll(".chip").forEach(c => c.onclick = () => { $("#q").value = c.textContent; ask(); });
+}
+document.querySelectorAll(".modes button").forEach(b => b.onclick = () => setMode(b.dataset.mode));
+$("#reset").onclick = () => { session = null; $("#sessBox").hidden = true; $("#thread").innerHTML = ""; showEmpty(); $("#q").focus(); };
+$("#q").oninput = () => { $("#q").dir = $("#q").value ? dirOf($("#q").value) : "auto"; };
+$("#form").onsubmit = e => { e.preventDefault(); ask(); };
+document.addEventListener("keydown", e => { if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") { e.preventDefault(); $("#q").focus(); } });
+
+/* ---------- status + library ---------- */
+async function health() {
+  const st = $("#status");
+  try {
+    const h = await (await fetch("/health")).json();
+    const ok = h.quick_only || h.llm_up;
+    st.innerHTML = `<span class="dot ${ok ? "ok" : "warn"}"></span><span>${ok ? "Ready" : "Answer model offline: Quick Search only"}, ${h.chunks} passages${h.reranker ? ", fine-tuned models" : ""}</span>`;
+    document.querySelectorAll('.modes button:not([data-mode="quick_search"])').forEach(b => b.disabled = !!h.quick_only);
+  } catch { st.innerHTML = `<span class="dot bad"></span><span>Server not reachable. Is the API window running?</span>`; }
+}
+async function loadDocs() {
+  try { docs = (await (await fetch("/documents")).json()).documents; } catch { docs = []; }
+  renderDocs();
+}
+function renderDocs() {
+  const f = $("#filter").value.trim().toLowerCase();
+  const list = docs.filter(d => !f || d.title.toLowerCase().includes(f) || d.source.toLowerCase().includes(f));
+  $("#libTitle").textContent = `Documents (${docs.length})`;
+  $("#docs").innerHTML = list.map(d => `<li><span class="t" dir="${dirOf(d.title)}">${esc(d.title)}</span>
+    <span class="f"><span class="tag">${LANG[d.lang] || esc(d.lang)}</span>${esc(d.source)}, ${d.chunks} passage${d.chunks === 1 ? "" : "s"}</span></li>`).join("")
+    || `<li class="f">No documents match “${esc(f)}”.</li>`;
+}
+$("#filter").oninput = renderDocs;
+
+/* ---------- upload ---------- */
+const OK_TYPES = [".pdf", ".docx", ".html", ".htm", ".md", ".markdown", ".txt"];
+async function upload(files) {
+  for (const file of files) {
+    const row = document.createElement("div"); row.className = "up";
+    row.innerHTML = `<span class="n">${esc(file.name)}</span><span class="s">Indexing…</span>`;
+    $("#uploads").prepend(row);
+    const s = row.querySelector(".s");
+    const ext = "." + file.name.split(".").pop().toLowerCase();
+    if (!OK_TYPES.includes(ext)) { s.textContent = "Not a supported type"; s.className = "s err"; continue; }
+    try {
+      const fd = new FormData(); fd.append("file", file);
+      const r = await fetch("/ingest/upload", {method: "POST", body: fd});
+      const d = await r.json();
+      if (!r.ok) throw new Error(d.detail || r.statusText);
+      if (d.errors && d.errors.length) throw new Error(d.errors[0].error);
+      const n = d.chunks_added || 0;
+      s.textContent = n ? `Added, ${n} passage${n === 1 ? "" : "s"}` : "Added"; s.className = "s ok";
+    } catch (e) { s.textContent = "Failed: " + e.message; s.className = "s err"; s.title = e.message; }
+  }
+  loadDocs(); health();
+}
+const drop = $("#drop");
+$("#file").onchange = e => { upload([...e.target.files]); e.target.value = ""; };
+drop.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); $("#file").click(); } };
+["dragenter", "dragover"].forEach(t => drop.addEventListener(t, e => { e.preventDefault(); drop.classList.add("over"); }));
+["dragleave", "drop"].forEach(t => drop.addEventListener(t, e => { e.preventDefault(); drop.classList.remove("over"); }));
+drop.addEventListener("drop", e => upload([...e.dataTransfer.files]));
+
+/* ---------- answer formatting ---------- */
+const toW = s => s.replace(/[٠-٩]/g, d => "٠١٢٣٤٥٦٧٨٩".indexOf(d));
+function fmtAnswer(text, cited) {
+  return esc(text).replace(/\[([0-9٠-٩][0-9٠-٩\s,،]*)\]/g, (m, inner) =>
+    toW(inner).split(/[\s,،]+/).filter(Boolean).map(n =>
+      (!cited || cited.has(+n)) ? `<button class="cm" data-c="${n}" aria-label="Source ${n}">${n}</button>` : "").join(""));
+}
+function linkNotes(scope) {
+  const lit = (n, on) => scope.querySelectorAll(`[data-c="${n}"]`).forEach(el => el.classList.toggle("lit", on));
+  scope.querySelectorAll("[data-c]").forEach(el => {
+    const n = el.dataset.c;
+    el.addEventListener("mouseenter", () => lit(n, true)); el.addEventListener("mouseleave", () => lit(n, false));
+    el.addEventListener("focus", () => lit(n, true)); el.addEventListener("blur", () => lit(n, false));
+    if (el.classList.contains("cm")) el.onclick = () => { const note = scope.querySelector(`.note[data-c="${n}"]`); note && note.scrollIntoView({block: "nearest", behavior: "smooth"}); };
+  });
+}
+function timing(l) {
+  if (!l) return "";
+  const parts = [["retrieval", "Search", "#1E4A8A"], ["query_rewrite", "Rewrite", "#7A94B8"], ["rerank", "Rerank", "#5E7FB0"],
+                 ["generation_total", "Writing the answer", "#A97C1F"]].filter(([k]) => l[k] > 0);
+  const total = l.total || parts.reduce((a, [k]) => a + l[k], 0);
+  return `<div class="timing"><div class="strip" aria-hidden="true">${parts.map(([k, , c]) => `<span style="width:${100 * l[k] / total}%;background:${c}"></span>`).join("")}</div>
+    <div class="legend">${parts.map(([k, n, c]) => `<span><i style="background:${c}"></i>${n} ${ms(l[k])}</span>`).join("")}
+    ${l.time_to_first_token ? `<span>First words after <b>${ms(l.time_to_first_token)}</b></span>` : ""}<span>Total <b>${ms(total)}</b></span></div></div>`;
+}
+
+/* ---------- search ---------- */
+async function ask() {
+  const query = $("#q").value.trim();
+  if (!query || busy) return;
+  busy = true; $("#go").disabled = true;
+  const thread = $("#thread");
+  if (mode !== "interactive" || thread.querySelector(".empty")) thread.innerHTML = "";
+  const turn = document.createElement("article");
+  turn.innerHTML = `<div class="q" dir="${dirOf(query)}">${esc(query)}</div><div class="body"></div>`;
+  thread.append(turn);
+  const body = turn.querySelector(".body");
+  if (mode === "interactive") $("#q").value = "";
+  try {
+    if (mode === "quick_search") await quick(query, body);
+    else if (mode === "compare") await compareRun(query, body);
+    else await stream(query, turn, body);
+  } catch (e) {
+    body.innerHTML = `<div class="err">The search failed: ${esc(e.message)}. Check that the API window is still running, then try again.</div>`;
+  } finally { busy = false; $("#go").disabled = false; turn.scrollIntoView({block: "nearest", behavior: "smooth"}); }
+}
+
+async function quick(query, body) {
+  const r = await fetch("/search", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({mode, query, top_k: 10})});
+  const d = await r.json(); if (!r.ok) throw new Error(d.detail || r.statusText);
+  const terms = query.split(/\s+/).filter(t => t.length >= 3).map(t => esc(t).replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+  const hl = s => terms.length ? esc(s).replace(new RegExp(`(${terms.join("|")})`, "gi"), "<mark>$1</mark>") : esc(s);
+  body.innerHTML = d.results.length ? `<ol class="results">${d.results.map(x => `<li dir="${dirOf(x.snippet)}">
+      <div class="rt" dir="${dirOf(x.title)}">${esc(x.title)}</div>
+      ${x.section && x.section !== x.title ? `<div class="rs" dir="${dirOf(x.section)}">${esc(x.section)}</div>` : ""}
+      <div class="sn" dir="${dirOf(x.snippet)}">${hl(x.snippet)}</div>
+      <div class="meta" dir="ltr" style="text-align:${dirOf(x.snippet) === "rtl" ? "right" : "left"}">${esc(x.source.split(/[\\/]/).pop())}${x.page ? `, page ${x.page}` : ""}, keyword score ${x.score}</div></li>`).join("")}</ol>
+      <div class="legend" style="margin-top:10px">${d.results.length} passages in <b>${ms(d.latency_ms.total ?? d.latency_ms.search)}</b></div>`
+    : `<div class="err">No passage contains these words. Try other words, or ask the question in Smart AI Search, which also finds passages in the other language.</div>`;
+}
+
+async function stream(query, turn, body) {
+  const r = await fetch("/search", {method: "POST", headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({mode, query, stream: true, session_id: mode === "interactive" ? (session || "new") : undefined})});
+  if (!r.ok) { const d = await r.json().catch(() => ({})); throw new Error(d.detail || r.statusText); }
+  const dir = dirOf(query);
+  body.innerHTML = `<div class="page" dir="${dir}"><div><div class="answer caret" dir="${dir}"></div></div><div class="margin"></div></div>`;
+  const ans = body.querySelector(".answer");
+  const reader = r.body.getReader(), dec = new TextDecoder();
+  let buf = "", text = "", final = null;
+  while (true) {
+    const {value, done} = await reader.read(); if (done) break;
+    buf += dec.decode(value, {stream: true});
+    let i;
+    while ((i = buf.indexOf("\n\n")) >= 0) {
+      const ev = buf.slice(0, i); buf = buf.slice(i + 2);
+      const kind = (ev.match(/^event: (\w+)/m) || [])[1];
+      const data = JSON.parse((ev.match(/^data: (.*)$/m) || [])[1] || "{}");
+      if (kind === "token") { text += data.delta; ans.innerHTML = fmtAnswer(text.split(/FOLLOWUPS:/)[0]); }
+      if (kind === "final") final = data;
+    }
+  }
+  if (!final) throw new Error("the answer stream ended early");
+  render(final, turn, body);
+}
+
+async function compareRun(query, body) {
+  body.innerHTML = `<p class="cmp-note">Searching with both versions. The original models run on the CPU, so this takes a few seconds.</p>`;
+  const r = await fetch("/compare", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({query, k: 5})});
+  const d = await r.json(); if (!r.ok) throw new Error(d.detail || r.statusText);
+  const qLang = isAr(query) ? "ar" : "en";
+  const ids = side => new Map(d[side].hits.map(h => [h.chunk_id, h.rank]));
+  const other = {before: ids("after"), after: ids("before")};
+  const col = (side, title) => {
+    const x = d[side], o = side === "before" ? "after" : "before";
+    return `<section class="side ${side}"><h3>${title}</h3>
+      <p class="sub">${esc(x.embedder)} + ${esc(x.reranker)}, on the ${x.device}, ${ms(x.ms)}</p>
+      ${x.would_say_not_found ? `<div class="nf">With these sources the system would answer "not found": the best match is below its confidence threshold.</div>` : ""}
+      <ol>${x.hits.map(h => {
+        const xl = h.lang !== "mixed" && h.lang !== qLang;
+        const seen = other[side].get(h.chunk_id);
+        return `<li><span class="rk">${h.rank}</span><span class="ti" dir="${dirOf(h.title)}">${esc(h.title)}</span>
+          <span class="sn" dir="${dirOf(h.snippet)}">${esc(h.snippet)}</span>
+          <span class="mt"><span>${esc(h.source)}${h.page ? `, page ${h.page}` : ""}</span>
+            ${xl ? `<span class="xl">${LANG[h.lang] || h.lang} document</span>` : ""}
+            ${seen ? `<span class="both">#${seen} in the ${o === "after" ? "fine-tuned" : "original"} list</span>` : ""}
+            <span title="Reranker relevance ${Math.round(h.relevance * 100)}%"><span class="rel"><i style="width:${Math.round(h.relevance * 100)}%"></i></span> ${Math.round(h.relevance * 100)}%</span></span></li>`;
+      }).join("")}</ol></section>`;
+  };
+  body.innerHTML = `<p class="cmp-note">Same documents, index and search settings in both columns; only the embedding model and the reranker differ.
+      Documents in a different language from the question are marked.</p>
+    <div class="cmp">${col("before", "Before fine-tuning (original models)")}${col("after", "After fine-tuning")}</div>`;
+}
+
+function render(d, turn, body) {
+  if (d.session_id) {
+    session = d.session_id;
+    $("#sessLabel").textContent = `Conversation, turn ${d.turn}.`; $("#sessBox").hidden = false;
+  }
+  if (d.rewritten_query && d.rewritten_query !== d.query)
+    turn.querySelector(".q").insertAdjacentHTML("beforeend", `<span class="rw" dir="${dirOf(d.rewritten_query)}">Searched as: ${esc(d.rewritten_query)}</span>`);
+  const dir = d.answer_language === "ar" ? "rtl" : "ltr";
+  const cites = d.citations || [];
+  const cited = new Set(cites.map(c => c.id));
+  const notes = cites.map(c => `<div class="note" data-c="${c.id}" tabindex="0" dir="${dirOf(c.title)}">
+      <div class="h"><span class="num">${c.id}</span><span>${esc(c.title)}</span></div>
+      <div class="sn" dir="${dirOf(c.snippet)}">${esc(c.snippet)}</div>
+      <div class="src" dir="ltr">${esc((c.source || c.doc_id).split(/[\\/]/).pop())}${c.page ? `, page ${c.page}` : ""}</div>
+      <div class="bar" title="Relevance ${Math.round(c.relevance * 100)}%"><i style="width:${Math.round(c.relevance * 100)}%"></i></div></div>`).join("");
+  body.innerHTML = `<div class="page" dir="${dir}">
+      <div><div class="answer ${d.not_found ? "nf" : ""}" dir="${dir}">${fmtAnswer(d.answer, cited)}</div>
+      ${d.citation_inferred ? `<div class="inferred" dir="ltr">The model gave no source numbers; the top source is shown.</div>` : ""}
+      ${(d.suggested_followups || []).length ? `<div class="fups">${d.suggested_followups.map(f => `<button class="chip" dir="${dirOf(f)}">${esc(f)}</button>`).join("")}</div>` : ""}
+      ${timing(d.latency_ms)}</div>
+      <aside class="margin" aria-label="Sources">${notes}</aside></div>`;
+  linkNotes(body);
+  body.querySelectorAll(".fups .chip").forEach(b => b.onclick = () => { $("#q").value = b.textContent; ask(); });
+}
+
+setMode("smart_ai_search"); health(); loadDocs(); setInterval(health, 20000);
+</script>
+</body>
+</html>

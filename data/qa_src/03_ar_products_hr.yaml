@@ -1,0 +1,199 @@
+- doc: product_bedrooms_ar
+  ev: "غرفة نوم ريم"
+  a_ar: "غرفة نوم ريم بالطراز العصري من خشب الزان بلون الجوز سعرها 12,800 ريال شاملة الضريبة، وتشمل سرير 180×200 ودولاب 4 أبواب وتسريحة وكومودينو عدد 2، ومتوفرة في المخزون."
+  a_en: "The Reem modern bedroom (walnut-coloured beech) costs SAR 12,800 incl. VAT and includes a 180×200 bed, 4-door wardrobe, dresser and two nightstands; it is in stock."
+  qs:
+    - [ar, "كم سعر غرفة نوم ريم وماذا تشمل؟"]
+    - [en, "What is the price of the Reem bedroom set?"]
+    - [dia, "بكم غرفة ريم؟ وهل هي متوفرة؟"]
+- doc: product_bedrooms_ar
+  ev: "خشب سنديان مصمت"
+  a_ar: "غرفة نوم نجد التراثية من خشب السنديان المصمت سعرها 21,500 ريال، وتصنع حسب الطلب خلال 5 أسابيع ولا يمكن استرجاعها."
+  a_en: "The Najd heritage bedroom in solid oak costs SAR 21,500, is made to order in 5 weeks and cannot be returned."
+  qs:
+    - [ar, "هل يمكن إرجاع غرفة نوم نجد وكم مدة تصنيعها؟"]
+    - [en, "How much does the Najd bedroom cost and how long does it take to make?"]
+- doc: product_bedrooms_ar
+  ev: "غرفة أطفال سما"
+  a_ar: "غرفة أطفال سما سعرها 4,200 ريال، وتشمل سرير مفرد 90×190 بحواف دائرية ومكتب دراسة ودولاب بابين، بألوان أزرق فاتح ووردي ورمادي."
+  a_en: "The Sama kids' bedroom costs SAR 4,200 and includes a 90×190 single bed with rounded edges, a study desk and a two-door wardrobe, in light blue, pink or grey."
+  qs:
+    - [ar, "ما الألوان المتوفرة لغرفة الأطفال سما وكم سعرها؟"]
+    - [en, "Do you have a kids bedroom set and what colours does it come in?"]
+- doc: product_bedrooms_ar
+  ev: "9,450 ريالا"
+  a_ar: "غرفة نوم لمار الكلاسيكية سعرها 9,450 ريالاً، وتشمل سريراً برأسية مبطنة ودولاب 3 أبواب موديل LW-3D وتسريحة وكومودينو عدد 2 وصندوق تخزين."
+  a_en: "The Lamar classic bedroom costs SAR 9,450 and includes an upholstered-headboard bed, the LW-3D 3-door wardrobe, a dresser, two nightstands and a storage bench."
+  qs:
+    - [ar, "ما مكونات غرفة نوم لمار الكلاسيكية؟"]
+    - [en, "Which wardrobe model comes with the Lamar bedroom?"]
+- doc: product_sofas_ar
+  ev: "زاوية واحة"
+  a_ar: "زاوية واحة كنبة على شكل L بخمس مقاعد قابلة للتبديل يميناً أو يساراً، وسعرها 7,200 ريال."
+  a_en: "The Waha corner sofa is an L-shaped 5-seater, reversible left or right, priced at SAR 7,200."
+  qs:
+    - [ar, "كم سعر كنبة الزاوية واحة؟"]
+    - [en, "Do you have an L-shaped corner sofa and how much is it?"]
+- doc: product_sofas_ar
+  ev: "كنبة سرير سفر"
+  a_ar: "كنبة سرير سفر تتحول إلى سرير مقاس 140×190 سم، بثلاثة مقاعد، وسعرها 4,400 ريال."
+  a_en: "The Safar sofa bed converts to a 140×190 cm bed, seats three and costs SAR 4,400."
+  qs:
+    - [ar, "هل لديكم كنبة تتحول إلى سرير؟"]
+    - [en, "What size bed does the Safar sofa bed open into?"]
+    - [mx, "أبغى sofa bed للضيوف، وش عندكم وكم السعر؟"]
+- doc: product_sofas_ar
+  ev: "مقابل 10% إضافية من السعر"
+  a_ar: "يمكن طلب قماش مختلف من 24 لوناً مقابل 10% إضافية، ويصبح المنتج مصنوعاً حسب الطلب، وأقمشة دانة وواحة قابلة للفك والغسل الجاف."
+  a_en: "A different fabric from 24 colours costs 10% extra and makes the item made-to-order; Dana and Waha covers are removable for dry cleaning."
+  qs:
+    - [ar, "هل يمكنني اختيار لون قماش مختلف للكنبة؟"]
+    - [en, "Can I customise the sofa fabric colour, and does it cost extra?"]
+- doc: mattress_trial_ar
+  ev: "يجب استخدام المرتبة 30 ليلة على الأقل"
+  a_ar: "يجب استخدام المرتبة 30 ليلة على الأقل، ويمكن طلب الإرجاع بين الليلة 31 والليلة 100، مرتبة واحدة لكل عميل خلال 12 شهراً."
+  a_en: "You must sleep on the mattress for at least 30 nights; returns can be requested between night 31 and night 100, limited to one mattress per customer per 12 months."
+  qs:
+    - [ar, "ما شروط برنامج تجربة المرتبة 100 ليلة؟"]
+    - [en, "Can I return a mattress after one week if I don't like it?"]
+    - [dia, "جربت المرتبة أسبوعين وما عجبتني، أقدر أرجعها؟"]
+- doc: mattress_trial_ar
+  ev: "رسوم استلام ثابتة قدرها 199 ريالا"
+  a_ar: "يسترد كامل ثمن المرتبة بعد خصم رسوم استلام 199 ريالاً، أو يمكن استبدالها بمرتبة أخرى دون رسوم."
+  a_en: "The full mattress price is refunded minus a fixed SAR 199 pickup fee, or you can exchange it for another mattress with no fee."
+  qs:
+    - [ar, "كم يخصم من المبلغ عند إرجاع المرتبة ضمن برنامج التجربة؟"]
+    - [en, "Is there a fee for returning a mattress under the 100-night trial?"]
+- doc: mattress_trial_ar
+  ev: "مرتبة سرايا أورثو الطبية"
+  a_ar: "مرتبة سرايا كلاود مقاس 180×200 بسعر 2,790 ريالاً، ومرتبة سرايا أورثو الطبية بنفس المقاس بسعر 3,450 ريالاً."
+  a_en: "The Saraya Cloud 180×200 mattress costs SAR 2,790 and the Saraya Ortho medical mattress in the same size costs SAR 3,450."
+  qs:
+    - [ar, "كم سعر المرتبة الطبية؟"]
+    - [en, "How much is the Saraya Ortho mattress?"]
+- doc: gift_cards_ar
+  ev: "صلاحية البطاقة 12 شهرا من تاريخ الشراء"
+  a_ar: "صلاحية بطاقة الهدايا 12 شهراً من الشراء، ولا يمكن تمديدها أو استرداد قيمتها نقداً."
+  a_en: "Gift cards are valid for 12 months from purchase; they cannot be extended or refunded in cash."
+  qs:
+    - [ar, "كم مدة صلاحية بطاقة الهدايا؟"]
+    - [en, "Can a gift card's validity be extended?"]
+- doc: gift_cards_ar
+  ev: "أما البطاقات الورقية فلا يمكن تعويضها"
+  a_ar: "البطاقات الرقمية مرتبطة برقم جوال المستلم ويمكن استعادتها، أما الورقية فلا تعوض عند فقدانها."
+  a_en: "Digital gift cards are linked to the recipient's mobile number and can be recovered; lost physical cards cannot be replaced."
+  qs:
+    - [ar, "فقدت بطاقة هدية ورقية، هل يمكن تعويضها؟"]
+    - [en, "I lost my physical gift card. Can it be replaced?"]
+- doc: hr_leave_policy_ar
+  ev: "إجازة سنوية مدفوعة مدتها 21 يوما"
+  a_ar: "الإجازة السنوية 21 يوماً مدفوعة، تزيد إلى 30 يوماً بعد 5 سنوات خدمة، ويجب تقديم الطلب قبل 14 يوماً للإجازات الأطول من 5 أيام، ويمكن ترحيل 10 أيام كحد أقصى."
+  a_en: "Annual leave is 21 paid days, rising to 30 after 5 years of service; requests over 5 days need 14 days' notice, and up to 10 days can be carried over."
+  qs:
+    - [ar, "كم عدد أيام الإجازة السنوية للموظف؟"]
+    - [en, "How many annual leave days do employees get after five years?"]
+    - [en, "How many unused leave days can I carry over to next year?"]
+    - [mx, "كم يوم annual leave نقدر نرحل للسنة الجاية؟"]
+- doc: hr_leave_policy_ar
+  ev: "أول 30 يوما بأجر كامل"
+  a_ar: "الإجازة المرضية بتقرير معتمد: أول 30 يوماً بأجر كامل، ثم 60 يوماً بثلاثة أرباع الأجر، ثم 30 يوماً بدون أجر خلال السنة."
+  a_en: "Sick leave with an approved report: first 30 days at full pay, next 60 days at three-quarters pay, then 30 days unpaid per year."
+  qs:
+    - [ar, "كيف تحتسب الإجازة المرضية؟"]
+    - [en, "What is the sick leave pay policy?"]
+- doc: hr_leave_policy_ar
+  ev: "الحج (مرة واحدة خلال الخدمة"
+  a_ar: "إجازة الحج من 10 إلى 15 يوماً مدفوعة مرة واحدة خلال الخدمة بعد سنتين من العمل، والزواج 5 أيام، والمولود للأب 3 أيام، والوفاة لقريب من الدرجة الأولى 5 أيام."
+  a_en: "Hajj leave is 10–15 paid days once during employment after two years of service; marriage leave is 5 days, paternity 3 days, bereavement (first-degree relative) 5 days."
+  qs:
+    - [ar, "هل يوجد إجازة للحج وما شروطها؟"]
+    - [en, "How many days of paternity leave do fathers get?"]
+    - [en, "Is there paid leave for getting married?"]
+- doc: hr_leave_policy_ar
+  ev: "لا تعتمد الإجازات السنوية لموظفي المعارض"
+  a_ar: "لا تعتمد الإجازات السنوية لموظفي المعارض خلال آخر أسبوعين من رمضان وأسبوع الجمعة البيضاء إلا في الطوارئ بموافقة مدير المنطقة."
+  a_en: "Showroom staff cannot take annual leave in the last two weeks of Ramadan or during White Friday week, except emergencies approved by the area manager."
+  qs:
+    - [ar, "هل يمكن لموظف المعرض أخذ إجازة في آخر رمضان؟"]
+    - [en, "Can showroom employees take vacation during White Friday?"]
+- doc: hr_remote_work_ar
+  ev: "يومين في الأسبوع كحد أقصى"
+  a_ar: "يحق لموظفي الإدارات المساندة العمل عن بعد يومين أسبوعياً كحد أقصى بعد فترة التجربة 90 يوماً، في يومي الأحد أو الخميس فقط، ولا تنطبق على موظفي المعارض والمستودعات والتركيب."
+  a_en: "Support-function staff may work remotely up to two days a week after the 90-day probation, on Sundays or Thursdays only; it does not apply to showroom, warehouse or installation staff."
+  qs:
+    - [ar, "كم يوم يمكنني العمل من المنزل؟"]
+    - [en, "Which days are allowed for remote work?"]
+    - [en, "Can warehouse staff work from home?"]
+    - [mx, "هل الـremote work مسموح لموظفين الـIT؟ وكم يوم؟"]
+- doc: hr_remote_work_ar
+  ev: "بدل إنترنت شهري قدره 150 ريالا"
+  a_ar: "يصرف بدل إنترنت شهري 150 ريالاً للموظفين المعتمدين للعمل عن بعد، مع اشتراط استخدام جهاز الشركة والـVPN."
+  a_en: "Approved remote workers receive a monthly internet allowance of SAR 150 and must use a company device and the VPN."
+  qs:
+    - [ar, "هل يوجد بدل إنترنت للعمل عن بعد؟"]
+    - [en, "Is there an internet allowance for remote employees?"]
+- doc: hr_remote_work_ar
+  ev: "الساعات الأساسية من 10 صباحا حتى 3 عصرا"
+  a_ar: "يمكن بدء الدوام بين 7:30 و9:30 صباحاً مع إكمال 8 ساعات يومياً والتواجد في الساعات الأساسية من 10 صباحاً حتى 3 عصراً."
+  a_en: "Work can start between 7:30 and 9:30 AM, with 8 hours per day and mandatory core hours from 10 AM to 3 PM."
+  qs:
+    - [ar, "ما هي ساعات العمل المرنة؟"]
+    - [en, "What are the core hours under the flexible working policy?"]
+- doc: ramadan_offers_2026_ar
+  ev: "خصم 30% على أطقم المجالس العربية"
+  a_ar: "عروض رمضان 2026 كانت من 18 فبراير إلى 19 مارس 2026 وانتهت، وشملت خصم 30% على أطقم المجالس و20% على غرف الطعام."
+  a_en: "The Ramadan 2026 offers ran from 18 February to 19 March 2026 and have ended; they included 30% off majlis sets and 20% off dining rooms."
+  qs:
+    - [ar, "ما هي عروض رمضان على المجالس العربية؟"]
+    - [en, "Is the Ramadan discount on majlis sets still running?"]
+- doc: care_guide_ar
+  ev: "50 سم على الأقل من فتحات المكيف"
+  a_ar: "ضع الأثاث الخشبي على بعد 50 سم على الأقل من فتحات المكيف لأن الهواء البارد الجاف يسبب تشقق الخشب، وامسح الغبار مرتين أسبوعياً بدون منظفات الأمونيا والكحول."
+  a_en: "Keep wooden furniture at least 50 cm from AC vents because direct cold dry air cracks wood; dust twice a week and avoid ammonia or alcohol cleaners."
+  qs:
+    - [ar, "كيف أحافظ على الأثاث الخشبي من التشقق؟"]
+    - [en, "How far should wooden furniture be from the air conditioner?"]
+- doc: care_guide_ar
+  ev: "بسعر 250 ريالا للكنبة الثلاثية"
+  a_ar: "خدمة التنظيف الاحترافي متوفرة بسعر 250 ريالاً للكنبة الثلاثية داخل الرياض وجدة والدمام."
+  a_en: "Professional cleaning costs SAR 250 for a three-seater sofa in Riyadh, Jeddah and Dammam."
+  qs:
+    - [ar, "هل لديكم خدمة تنظيف للكنب وكم سعرها؟"]
+    - [en, "Do you offer professional sofa cleaning?"]
+    - [dia, "أبي أحد ينظف الكنب عندي، تسوون هالخدمة؟"]
+- doc: dining_rooms_ar
+  ev: "طاولة سدرة الممتدة"
+  a_ar: "طاولة سدرة الممتدة من خشب الجوز تتسع من 6 إلى 10 كراسٍ ويتغير طولها من 180 إلى 260 سم، وسعرها 8,300 ريال."
+  a_en: "The extendable Sidra walnut table seats 6 to 10, extends from 180 to 260 cm and costs SAR 8,300."
+  qs:
+    - [ar, "هل لديكم طاولة طعام قابلة للتمديد لعشرة أشخاص؟"]
+    - [en, "How much is the extendable Sidra dining table?"]
+- doc: dining_rooms_ar
+  ev: "الكراسي الإضافية متوفرة بسعر 420 ريالا"
+  a_ar: "الكرسي الإضافي من طقم سدرة بسعر 420 ريالاً، ومن طقم لؤلؤة بسعر 680 ريالاً."
+  a_en: "Extra chairs cost SAR 420 each for the Sidra set and SAR 680 each for the Lulua set."
+  qs:
+    - [ar, "كم سعر الكرسي الإضافي لطاولة سدرة؟"]
+    - [en, "Can I buy extra chairs for the Lulua dining table?"]
+- doc: faq_saraya_business_ar
+  ev: "بنسبة 20% من سعر القائمة الأصلي"
+  a_ar: "يمكن شراء الأثاث في نهاية العقد بنسبة 20% من سعر القائمة الأصلي للعقود 24 شهراً فأكثر، و35% للعقود الأقصر."
+  a_en: "At the end of the contract the furniture can be bought for 20% of the original list price for contracts of 24 months or more, and 35% for shorter contracts."
+  qs:
+    - [ar, "هل يمكن شراء أثاث المكتب في نهاية عقد الاشتراك؟"]
+    - [en, "Can we buy the furniture when our Saraya Business contract ends, and at what price?"]
+    - [mx, "بعد ما يخلص الـcontract، نقدر نشتري الأثاث؟ بكم؟"]
+- doc: faq_saraya_business_ar
+  ev: "عينة مجانية من الكراسي لمدة 14 يوما"
+  a_ar: "يوجد معرض تجريبي لأثاث المكاتب في فرع الملقا، ويمكن للشركات التي تخطط لأكثر من 30 مقعداً طلب عينة كراسي مجانية لمدة 14 يوماً."
+  a_en: "There is an office furniture demo showroom at the Malqa branch, and companies planning more than 30 seats can borrow free sample chairs for 14 days."
+  qs:
+    - [ar, "هل يمكن تجربة كراسي المكتب قبل التعاقد؟"]
+    - [en, "Can our company try office chairs before signing a contract?"]
+- doc: faq_saraya_business_ar
+  ev: "الحد الأدنى للاشتراك 5 مقاعد عمل"
+  a_ar: "يمكن لأي منشأة بسجل تجاري ساري الاشتراك بما فيها الشركات الناشئة والجهات غير الربحية، والحد الأدنى 5 مقاعد عمل."
+  a_en: "Any entity with a valid Saudi commercial registration can subscribe, including startups and non-profits; the minimum is 5 workstations."
+  qs:
+    - [ar, "ما الحد الأدنى لعدد المقاعد للاشتراك في Saraya Business؟"]
+    - [en, "Can a startup with only 6 employees subscribe to Saraya Business?"]

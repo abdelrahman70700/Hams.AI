@@ -1,0 +1,46 @@
+# Encoder / reranker registry. `query_prefix` / `passage_prefix` are required by E5-family models.
+embedders:
+  e5-base:
+    path: intfloat/multilingual-e5-base
+    query_prefix: "query: "
+    passage_prefix: "passage: "
+    max_seq_length: 256
+  e5-small:
+    path: intfloat/multilingual-e5-small
+    query_prefix: "query: "
+    passage_prefix: "passage: "
+    max_seq_length: 256
+  gte-base:
+    path: Alibaba-NLP/gte-multilingual-base
+    trust_remote_code: true
+    max_seq_length: 256
+  bge-m3:
+    path: BAAI/bge-m3
+    max_seq_length: 256
+  e5-base-ft:                       # our fine-tuned model (scripts/train_embeddings.py)
+    path: models/e5-base-saraya-ft
+    query_prefix: "query: "
+    passage_prefix: "passage: "
+    max_seq_length: 256
+rerankers:
+  reranker-ft:                      # selected by scripts/select_reranker.py (best validation MRR@10)
+    path: models/gte-reranker-saraya-ft_lr2e6_dn
+    max_length: 384
+    trust_remote_code: true
+  gte-rerank:
+    path: Alibaba-NLP/gte-multilingual-reranker-base
+    trust_remote_code: true
+    max_length: 384
+  mminilm:
+    path: cross-encoder/mmarco-mMiniLMv2-L12-H384-v1
+    max_length: 384
+  bge-rerank-m3:
+    path: BAAI/bge-reranker-v2-m3
+    max_length: 384
+  mminilm-ft:                       # fine-tuned mMiniLM cross-encoder (scripts/train_reranker.py --base mminilm)
+    path: models/mminilm-saraya-ft
+    max_length: 384
+  gte-rerank-ft:                    # our fine-tuned model (scripts/train_reranker.py)
+    path: models/gte-reranker-saraya-ft
+    trust_remote_code: true
+    max_length: 384

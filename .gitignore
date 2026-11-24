@@ -1,0 +1,17 @@
+# environment, caches and downloaded models (recreated by tools\setup_env.bat)
+.env/
+.cache/
+bin/
+models/
+# indexes and uploads (recreated by scripts\build_index.py / the demo)
+data/index/
+data/corpus/uploads/
+# working files
+tools/logs/
+tools/hams_sync.tgz
+*.vmold*
+*.new
+__pycache__/
+.pytest_cache/
+*.pyc
+demo_video/

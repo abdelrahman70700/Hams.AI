@@ -1,0 +1,173 @@
+- doc: policy_delivery_ar
+  ev: "مجاني للطلبات فوق 1,500 ريال، و99 ريالا لما دون ذلك"
+  a_ar: "التوصيل داخل الرياض مجاني للطلبات فوق 1,500 ريال، و99 ريالاً لما دون ذلك، ويستغرق من 3 إلى 5 أيام عمل."
+  a_en: "Delivery in Riyadh is free for orders above SAR 1,500 and SAR 99 otherwise, taking 3 to 5 business days."
+  qs:
+    - [ar, "هل التوصيل مجاني داخل الرياض؟"]
+    - [en, "How much does delivery cost in Riyadh?"]
+    - [dia, "طلبي بألف ريال وأنا بالرياض، كم بياخذون توصيل؟"]
+    - [mx, "الـdelivery fees داخل الرياض كم؟ ومتى يكون free؟"]
+- doc: policy_delivery_ar
+  ev: "المدينة: بقية مدن المملكة"
+  a_ar: "رسوم التوصيل لبقية مدن المملكة 350 ريالاً، ومدته من 7 إلى 14 يوم عمل."
+  a_en: "Delivery to other Saudi cities costs SAR 350 and takes 7 to 14 business days."
+  qs:
+    - [ar, "كم رسوم التوصيل إلى أبها وكم يستغرق؟"]
+    - [en, "What is the delivery fee to smaller cities outside the main regions?"]
+- doc: policy_delivery_ar
+  ev: "المدينة: جدة"
+  a_ar: "التوصيل إلى جدة 199 ريالاً، ومجاني للطلبات فوق 4,000 ريال، ويستغرق من 5 إلى 7 أيام عمل."
+  a_en: "Delivery to Jeddah costs SAR 199, free above SAR 4,000, and takes 5 to 7 business days."
+  qs:
+    - [ar, "كم رسوم التوصيل إلى جدة؟"]
+    - [en, "How long does delivery to Jeddah take and what does it cost?"]
+- doc: policy_delivery_ar
+  ev: "التوصيل في يوم الجمعة متاح داخل الرياض فقط مقابل رسوم إضافية قدرها 100 ريال"
+  a_ar: "التوصيل من السبت إلى الخميس 9 صباحاً حتى 9 مساءً، والتوصيل يوم الجمعة متاح داخل الرياض فقط برسوم إضافية 100 ريال."
+  a_en: "Deliveries run Saturday to Thursday, 9 AM to 9 PM; Friday delivery is available only in Riyadh for an extra SAR 100."
+  qs:
+    - [ar, "هل يمكن التوصيل يوم الجمعة؟"]
+    - [en, "Do you deliver on Fridays?"]
+    - [en, "What are the delivery time slots?"]
+- doc: policy_delivery_ar
+  ev: "يمكن تغيير الموعد مجانا مرة واحدة"
+  a_ar: "يمكن تغيير موعد التوصيل مجاناً مرة واحدة إذا تم الإبلاغ قبل 24 ساعة، وأي تغيير إضافي أو خلال أقل من 24 ساعة برسوم 75 ريالاً."
+  a_en: "You can reschedule once for free with at least 24 hours' notice; further changes or changes with less notice cost SAR 75."
+  qs:
+    - [ar, "هل يمكنني تغيير موعد التوصيل وهل توجد رسوم؟"]
+    - [en, "Is there a fee for rescheduling a delivery?"]
+    - [dia, "أبي أأجل موعد التوصيل لبكرة، فيه رسوم؟"]
+- doc: policy_installation_ar
+  ev: "50 ريالا لكل طابق لكل قطعة كبيرة"
+  a_ar: "التركيب مجاني للقطع الأساسية، وفي المباني بدون مصعد تضاف 50 ريالاً لكل طابق فوق الطابق الثاني لكل قطعة كبيرة (أكثر من 30 كجم أو بعد يتجاوز مترين)."
+  a_en: "Installation of basic pieces is free; for buildings without an elevator there is SAR 50 per floor above the 2nd floor per large item (over 30 kg or longer than 2 m)."
+  qs:
+    - [ar, "كم رسوم التركيب؟"]
+    - [ar, "أسكن في الدور الرابع بدون مصعد، هل تضاف رسوم على تركيب غرفة النوم؟"]
+    - [en, "Is there an extra installation charge for upper floors without an elevator?"]
+    - [mx, "كم الـinstallation fees لو العمارة ما فيها elevator؟"]
+- doc: policy_installation_ar
+  ev: "120 ريالا لكل قطعة"
+  a_ar: "تثبيت قطعة على الجدار مثل الرفوف والمرايا ووحدات التلفزيون برسوم 120 ريالاً لكل قطعة."
+  a_en: "Wall mounting (shelves, mirrors, TV units) costs SAR 120 per item."
+  qs:
+    - [ar, "كم تكلفة تثبيت وحدة التلفزيون على الجدار؟"]
+    - [en, "How much do you charge to mount a mirror on the wall?"]
+- doc: policy_installation_ar
+  ev: "التخلص من الأثاث القديم"
+  a_ar: "فك الأثاث القديم ونقله لغرفة أخرى 200 ريال للغرفة، والتخلص من الأثاث القديم 150 ريالاً للقطعة الكبيرة."
+  a_en: "Dismantling old furniture and moving it to another room costs SAR 200 per room; disposal of old furniture costs SAR 150 per large item."
+  qs:
+    - [ar, "هل تأخذون الأثاث القديم وكم التكلفة؟"]
+    - [en, "Can you take away my old sofa and how much does it cost?"]
+- doc: policy_installation_ar
+  ev: "مجاني حتى 5 قطع"
+  a_ar: "تركيب أثاث المكاتب لعملاء الأفراد مجاني حتى 5 قطع، وما زاد بسعر 45 ريالاً للقطعة."
+  a_en: "Office furniture installation for individual customers is free up to 5 items, then SAR 45 per item."
+  qs:
+    - [ar, "اشتريت 8 قطع أثاث مكتبي لمنزلي، كم سأدفع للتركيب؟"]
+    - [en, "Is assembly of home office furniture free?"]
+- doc: faq_payment_ar
+  ev: "الدفع عند الاستلام متاح للطلبات حتى 5,000 ريال فقط"
+  a_ar: "الدفع عند الاستلام متاح للطلبات حتى 5,000 ريال برسوم خدمة 25 ريالاً، والطلبات الأعلى تتطلب الدفع المسبق أو دفعة مقدمة 30%."
+  a_en: "Cash on delivery is allowed for orders up to SAR 5,000 with a SAR 25 service fee; larger orders need prepayment or a 30% deposit."
+  qs:
+    - [ar, "هل يوجد حد أعلى للدفع عند الاستلام؟"]
+    - [en, "Can I pay cash on delivery for a SAR 7,000 order?"]
+    - [mx, "الـcash on delivery له رسوم؟"]
+- doc: faq_payment_ar
+  ev: "على 4 دفعات بدون فوائد"
+  a_ar: "يمكن تقسيط الطلبات من 1,000 إلى 20,000 ريال على 4 دفعات بدون فوائد، وللطلبات فوق 3,000 ريال يتوفر تقسيط 12 شهراً بدون فوائد للعملاء المؤهلين."
+  a_en: "Orders from SAR 1,000 to 20,000 can be split into 4 interest-free payments; orders above SAR 3,000 can use 12 interest-free monthly installments for eligible customers."
+  qs:
+    - [ar, "هل يمكن تقسيط المبلغ؟"]
+    - [en, "Do you offer installment plans without interest?"]
+    - [dia, "أبي أقسط غرفة نوم بـ٩ آلاف، ينفع على ١٢ شهر؟"]
+- doc: faq_payment_ar
+  ev: "تدفع 50% عند الطلب و50% قبل التوصيل"
+  a_ar: "في المنتجات المصنوعة حسب الطلب يدفع 50% عند الطلب و50% قبل التوصيل، أما الدفع الإلكتروني فيخصم فور تأكيد الطلب."
+  a_en: "For made-to-order products, 50% is paid when ordering and 50% before delivery; electronic payments are charged on order confirmation."
+  qs:
+    - [ar, "متى يتم خصم المبلغ للمنتجات المصنوعة حسب الطلب؟"]
+    - [en, "When am I charged for a made-to-order item?"]
+- doc: faq_payment_ar
+  ev: "ضريبة القيمة المضافة بنسبة 15%"
+  a_ar: "نعم، جميع الأسعار المعروضة تشمل ضريبة القيمة المضافة 15%."
+  a_en: "Yes, all displayed retail prices include 15% VAT."
+  qs:
+    - [ar, "هل الأسعار شاملة الضريبة؟"]
+    - [en, "Do your retail prices include VAT?"]
+- doc: branches_ar
+  ev: "طريق أنس بن مالك، حي الملقا"
+  a_ar: "فرع الملقا يقع على طريق أنس بن مالك في حي الملقا بالرياض، وافتتح في 15 سبتمبر 2025 وهو الأكبر بمساحة 6,000 متر مربع ويضم قسماً لأثاث المكاتب."
+  a_en: "The Al-Malqa branch is on Anas Bin Malik Road in Al-Malqa, Riyadh; it opened on 15 September 2025 and is the largest branch at 6,000 m² with an office furniture section."
+  qs:
+    - [ar, "أين يقع فرع الملقا ومتى افتتح؟"]
+    - [en, "Which is your largest showroom and where is it?"]
+    - [en, "Where is the Malqa branch located?"]
+- doc: branches_ar
+  ev: "شارع الأمير محمد بن عبدالعزيز"
+  a_ar: "فرع جدة يقع في شارع الأمير محمد بن عبدالعزيز (التحلية) بحي الأندلس، وهاتفه 0126603300."
+  a_en: "The Jeddah branch is on Prince Mohammed bin Abdulaziz Street (Tahlia) in Al-Andalus district; phone 0126603300."
+  qs:
+    - [ar, "عنوان فرعكم في جدة؟"]
+    - [en, "What is the address and phone number of the Jeddah showroom?"]
+- doc: branches_ar
+  ev: "الجمعة: من 4 عصرا حتى 11 مساء"
+  a_ar: "المعارض تعمل من السبت إلى الخميس من 10 صباحاً حتى 11 مساءً، والجمعة من 4 عصراً حتى 11 مساءً، وفي رمضان من 1 ظهراً إلى 5 عصراً ثم من 9 مساءً حتى 2 بعد منتصف الليل."
+  a_en: "Showrooms open Saturday–Thursday 10 AM–11 PM and Friday 4 PM–11 PM; in Ramadan 1–5 PM and 9 PM–2 AM."
+  qs:
+    - [ar, "ما مواعيد عمل المعارض يوم الجمعة؟"]
+    - [en, "What are your showroom opening hours during Ramadan?"]
+    - [dia, "المعرض يفتح الجمعة الصبح؟"]
+- doc: branches_ar
+  ev: "خدمة المحادثة عبر الواتساب متاحة على مدار الساعة"
+  a_ar: "الرقم الموحد 920004488 متاح يومياً من 9 صباحاً حتى 10 مساءً، والمحادثة عبر واتساب متاحة على مدار الساعة للاستفسارات العامة."
+  a_en: "The unified number 920004488 is available daily from 9 AM to 10 PM, and WhatsApp chat is available 24/7 for general inquiries."
+  qs:
+    - [ar, "ما رقم خدمة العملاء ومتى يعمل؟"]
+    - [en, "What is the customer service phone number?"]
+- doc: loyalty_program_ar
+  ev: "نقطة واحدة مقابل كل 10 ريالات"
+  a_ar: "يحصل العضو على نقطة واحدة مقابل كل 10 ريالات على المنتجات، ولا تحتسب على التوصيل أو التركيب أو بطاقات الهدايا."
+  a_en: "Members earn 1 point for every SAR 10 spent on products; delivery, installation and gift cards do not earn points."
+  qs:
+    - [ar, "كم نقطة أحصل عليها مقابل كل ريال في برنامج الولاء؟"]
+    - [en, "How many loyalty points do I earn per riyal spent?"]
+- doc: loyalty_program_ar
+  ev: "إنفاق 15,000 ريال"
+  a_ar: "يصل العضو للمستوى الذهبي بإنفاق 15,000 ريال خلال 12 شهراً ويحصل على نقاط 1.5 مرة وتوصيل مجاني لكل المدن، وللبلاتيني بإنفاق 40,000 ريال مع نقاط مضاعفة وتركيب مجاني لقطع الجدار ومستشار تصميم."
+  a_en: "Gold tier requires SAR 15,000 spend in 12 months (1.5x points, free delivery everywhere); Platinum requires SAR 40,000 (2x points, free wall-mount installation, personal design consultant)."
+  qs:
+    - [ar, "كيف أصل إلى المستوى الذهبي في نقاط سرايا وما مزاياه؟"]
+    - [en, "What are the benefits of the Platinum loyalty tier?"]
+    - [mx, "وش الـbenefits حق المستوى الذهبي في برنامج الولاء؟"]
+- doc: loyalty_program_ar
+  ev: "تنتهي صلاحية النقاط بعد 18 شهرا"
+  a_ar: "تنتهي صلاحية النقاط بعد 18 شهراً من كسبها، وكل 100 نقطة تساوي 10 ريالات بحد أدنى 500 نقطة للاستبدال وبحد أقصى 50% من قيمة الطلب."
+  a_en: "Points expire 18 months after being earned; 100 points = SAR 10, minimum redemption 500 points, covering at most 50% of an order."
+  qs:
+    - [ar, "متى تنتهي صلاحية نقاط الولاء؟"]
+    - [en, "How much is 100 loyalty points worth when redeeming?"]
+- doc: complaints_escalation_ar
+  ev: "إذا لم تحل الشكوى خلال 3 أيام عمل"
+  a_ar: "تصعّد الشكوى إلى مشرف خدمة العملاء إذا لم تحل خلال 3 أيام عمل، ثم إلى مدير تجربة العملاء إذا لم تحل خلال 7 أيام عمل، ويمكن التصعيد مباشرة إذا تكرر العطل أكثر من مرتين."
+  a_en: "Complaints escalate to a customer service supervisor if unresolved within 3 business days, then to the Customer Experience Manager after 7 business days; direct escalation is allowed if the same fault repeats more than twice."
+  qs:
+    - [ar, "متى يتم تصعيد الشكوى إلى المشرف؟"]
+    - [en, "How do I escalate a complaint that has not been resolved?"]
+    - [dia, "شكواي لها أسبوع وما أحد رد علي، لمين أصعدها؟"]
+- doc: complaints_escalation_ar
+  ev: "يبدأ بالحرفين CM خلال ساعة واحدة"
+  a_ar: "تقدم الشكوى عبر الرقم الموحد أو محادثة التطبيق أو نموذج تواصل معنا، ويحصل العميل على رقم شكوى يبدأ بـCM خلال ساعة."
+  a_en: "Complaints can be filed via the unified number, app chat or the website contact form; a complaint number starting with CM is issued within one hour."
+  qs:
+    - [ar, "كيف أقدم شكوى وبماذا يبدأ رقم الشكوى؟"]
+    - [en, "What prefix does a complaint reference number have?"]
+- doc: complaints_escalation_ar
+  ev: "بدرجة 2 أو أقل يعاد فتحها تلقائيا"
+  a_ar: "الشكاوى التي يقيم حلها بدرجة 2 أو أقل من 5 يعاد فتحها تلقائياً ويراجعها المشرف."
+  a_en: "Complaints whose resolution is rated 2 or lower out of 5 are automatically reopened and reviewed by a supervisor."
+  qs:
+    - [ar, "ماذا يحدث إذا قيمت حل الشكوى بدرجة منخفضة؟"]
+    - [en, "What happens if I give a low rating after my complaint is closed?"]

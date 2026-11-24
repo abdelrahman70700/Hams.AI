@@ -1,0 +1,298 @@
+- doc: smartrest_troubleshooting_mx
+  ev: "E04"
+  a_ar: "الخطأ E04 يعني حمولة زائدة على المحرك؛ أزل الوزن الزائد، والحد الأقصى 250 كجم للسرير المزدوج."
+  a_en: "Error E04 means motor overload; remove excess weight — the maximum is 250 kg for a double bed."
+  qs:
+    - [ar, "السرير الذكي يظهر الخطأ E04، ما معناه؟"]
+    - [en, "What does error code E04 on the SmartRest bed mean?"]
+    - [mx, "الـSmartRest يطلع E04 وش الحل؟"]
+- doc: smartrest_troubleshooting_mx
+  ev: "E05"
+  a_ar: "الخطأ E05 يعني سخونة المحرك؛ اترك السرير 15 دقيقة ولا تشغله أكثر من دقيقتين متواصلتين."
+  a_en: "E05 means the motor overheated; leave it for 15 minutes and don't run it for more than 2 minutes continuously."
+  qs:
+    - [en, "My smart bed shows E05 after adjusting it many times. What should I do?"]
+    - [ar, "ماذا يعني الخطأ E05 في السرير الذكي؟"]
+- doc: smartrest_troubleshooting_mx
+  ev: "E03"
+  a_ar: "الخطأ E03 فشل الاقتران مع التطبيق؛ اضغط زر Pair أسفل السرير 5 ثوانٍ حتى يومض الضوء الأزرق."
+  a_en: "E03 is an app pairing failure; press the Pair button under the bed for 5 seconds until the blue light flashes."
+  qs:
+    - [en, "How do I pair the SmartRest bed with the Saraya Home app?"]
+    - [dia, "السرير الذكي ما يبي يتوصل بالجوال، وش أسوي؟"]
+- doc: smartrest_troubleshooting_mx
+  ev: "v2.4.1"
+  a_ar: "أحدث إصدار للـfirmware هو v2.4.1 الصادر في 10 أغسطس 2026، ويحل مشكلة انقطاع البلوتوث بعد وضع السكون، والتحديث تلقائي من التطبيق."
+  a_en: "The latest firmware is v2.4.1, released 10 August 2026; it fixes Bluetooth dropping after sleep mode and installs automatically via the app."
+  qs:
+    - [en, "What is the latest SmartRest firmware version and what does it fix?"]
+    - [ar, "البلوتوث في السرير الذكي ينقطع بعد وضع السكون، هل يوجد تحديث يحل المشكلة؟"]
+- doc: smartrest_troubleshooting_mx
+  ev: "سعر SmartRest SR-1"
+  a_ar: "سعر SmartRest SR-1 مقاس 150×200 هو 7,900 ريال، وSR-2 Pro مقاس 180×200 مع التدليك 11,400 ريال شاملة الضريبة."
+  a_en: "SmartRest SR-1 (150×200) costs SAR 7,900 and SR-2 Pro (180×200, with massage) costs SAR 11,400, including VAT."
+  qs:
+    - [en, "How much is the SmartRest SR-2 Pro?"]
+    - [ar, "كم سعر السرير الذكي مع خاصية التدليك؟"]
+- doc: it_helpdesk_mx
+  ev: "Gateway unreachable"
+  a_ar: "تأكد أن GlobalConnect بإصدار 6.2 أو أحدث وأن رمز MFA صحيح، وإذا ظهر Gateway unreachable جرب شبكة أخرى لأن بعض شبكات الفنادق تحجب المنفذ 443 UDP."
+  a_en: "Make sure GlobalConnect is version 6.2 or newer and the MFA code is correct; for 'Gateway unreachable', try another network since some hotel networks block port 443 UDP."
+  qs:
+    - [en, "The VPN says Gateway unreachable at the hotel, what should I do?"]
+    - [ar, "الـVPN لا يتصل وأنا في فندق، ما الحل؟"]
+    - [mx, "الـVPN يطلع لي Gateway unreachable، كيف أحلها؟"]
+- doc: it_helpdesk_mx
+  ev: "مدة التنفيذ 5 أيام عمل للأجهزة"
+  a_ar: "يقدم طلب الجهاز أو البرنامج عبر ServiceDesk بموافقة المدير المباشر، والتنفيذ خلال 5 أيام عمل للأجهزة و3 أيام للبرامج المعتمدة."
+  a_en: "Hardware/software requests go through ServiceDesk with line-manager approval; delivery takes 5 business days for hardware and 3 for approved software."
+  qs:
+    - [en, "How long does it take to get a new laptop through IT?"]
+    - [ar, "كيف أطلب برنامج جديد على جهازي وكم يستغرق؟"]
+- doc: it_helpdesk_mx
+  ev: "Critical (استجابة خلال 30 دقيقة)"
+  a_ar: "أولويات فريق الـIT الداخلية: Critical خلال 30 دقيقة، وHigh خلال ساعتين، وNormal خلال يوم عمل، وLow خلال 3 أيام عمل."
+  a_en: "Internal IT priorities: Critical within 30 minutes, High within 2 hours, Normal within 1 business day, Low within 3 business days."
+  qs:
+    - [en, "What is the internal IT response time for a high priority issue?"]
+    - [ar, "كم وقت استجابة الدعم الفني الداخلي للحالات الحرجة؟"]
+- doc: pricing_promotions_faq_mx
+  ev: "WELCOME10"
+  a_ar: "كود WELCOME10 يعطي خصم 10% على أول طلب عبر التطبيق بحد أقصى 300 ريال، بشرط ألا يقل الطلب عن 1,000 ريال."
+  a_en: "WELCOME10 gives 10% off the first app order, capped at SAR 300, for orders of at least SAR 1,000."
+  qs:
+    - [en, "Is there a discount code for new customers?"]
+    - [ar, "ما هو كود الخصم للعملاء الجدد وما شروطه؟"]
+    - [mx, "كود الـWELCOME10 كم يعطي خصم؟"]
+- doc: pricing_promotions_faq_mx
+  ev: "Price Match"
+  a_ar: "إذا انخفض سعر نفس المنتج لدى سرايا خلال 7 أيام من الشراء بسبب عرض جديد نعيد الفرق رصيداً في المحفظة، ولا تشمل السياسة أسعار المنافسين."
+  a_en: "If Saraya lowers the price of the same product within 7 days of purchase due to a new offer, the difference is refunded as wallet credit; competitor prices are not matched."
+  qs:
+    - [en, "Do you match competitor prices?"]
+    - [ar, "اشتريت كنبة ونزل سعرها بعد 3 أيام، هل أسترد الفرق؟"]
+- doc: pricing_promotions_faq_mx
+  ev: "خصم 7% على الأسعار غير المخفضة"
+  a_ar: "للموظفين الحكوميين والعسكريين خصم 7% على الأسعار غير المخفضة عند إبراز البطاقة في المعارض فقط، ولا يشمل الشراء عبر الإنترنت."
+  a_en: "Government and military employees get 7% off non-discounted prices by showing their ID in showrooms only, not online."
+  qs:
+    - [en, "Is there a discount for military personnel?"]
+    - [ar, "هل يوجد خصم للعسكريين عند الشراء من التطبيق؟"]
+- doc: pricing_promotions_faq_mx
+  ev: "يمكن استخدام كود خصم واحد فقط لكل طلب"
+  a_ar: "يمكن استخدام كود خصم واحد فقط لكل طلب، ولا تجمع الأكواد مع منتجات الـClearance أو عروض الـBundle."
+  a_en: "Only one promo code can be used per order, and codes cannot be combined with Clearance items or Bundle offers."
+  qs:
+    - [en, "Can I use two promo codes on the same order?"]
+    - [ar, "هل يمكن استخدام أكثر من كود خصم؟"]
+- doc: delivery_tracking_mx
+  ev: "يبدأ بالحروف SRY متبوعة بعشرة أرقام"
+  a_ar: "رقم التتبع يبدأ بالحروف SRY متبوعة بعشرة أرقام، ويرسل عند انتقال الطلب لحالة Ready for Dispatch، وإذا لم يصل خلال 48 ساعة تحقق من رقم الجوال المسجل."
+  a_en: "Tracking numbers start with SRY followed by ten digits and are sent when the order reaches Ready for Dispatch; if none arrives within 48 hours, check the mobile number on your account."
+  qs:
+    - [en, "What format does the tracking number have?"]
+    - [ar, "لم يصلني رقم التتبع، متى يرسل؟"]
+- doc: delivery_tracking_mx
+  ev: "On Hold"
+  a_ar: "حالة On Hold تعني أن الطلب متوقف بانتظار إجراء من العميل مثل تأكيد العنوان أو دفع المبلغ المتبقي؛ تواصل خلال 3 أيام عمل وإلا قد يلغى تلقائياً بعد 14 يوماً مع الاسترداد."
+  a_en: "On Hold means the order awaits customer action, like confirming the address or paying the balance; contact support within 3 business days or it may be cancelled automatically after 14 days with a refund."
+  qs:
+    - [en, "My order status says On Hold. What does it mean?"]
+    - [ar, "حالة طلبي On Hold منذ أيام، هل سيلغى؟"]
+    - [mx, "وش معنى الـstatus On Hold في الـtracking؟"]
+- doc: delivery_tracking_mx
+  ev: "Out for Delivery"
+  a_ar: "حالة Out for Delivery تعني أن الشحنة مع السائق في الطريق إليك اليوم، وIn Production تعني أن المنتج قيد التصنيع."
+  a_en: "Out for Delivery means the driver has the shipment and it arrives today; In Production means the item is being manufactured."
+  qs:
+    - [en, "What does the In Production status mean?"]
+    - [ar, "ماذا تعني حالة Out for Delivery؟"]
+- doc: promotions_white_friday_2026_mx
+  ev: "من الخميس 26 نوفمبر 2026 حتى الأحد 6 ديسمبر 2026"
+  a_ar: "عروض الجمعة البيضاء 2026 من الخميس 26 نوفمبر حتى الأحد 6 ديسمبر 2026، مع وصول مبكر لأعضاء المستوى الذهبي والبلاتيني من 24 نوفمبر."
+  a_en: "White Friday 2026 runs from Thursday 26 November to Sunday 6 December 2026, with early access from 24 November for Gold and Platinum loyalty members."
+  qs:
+    - [en, "When does the White Friday sale start and end?"]
+    - [ar, "متى تبدأ عروض الجمعة البيضاء؟"]
+    - [mx, "هل فيه early access للـWhite Friday؟"]
+- doc: promotions_white_friday_2026_mx
+  ev: "الفئة: الكنب وغرف المعيشة؛ الخصم: حتى 40%"
+  a_ar: "خصومات الجمعة البيضاء: حتى 35% على غرف النوم، وحتى 40% على الكنب، و25% على مراتب كلاود وأورثو، و20% على ErgoPro، و15% على SmartRest."
+  a_en: "White Friday discounts: up to 35% on bedrooms, up to 40% on sofas, 25% on Cloud and Ortho mattresses, 20% on ErgoPro, 15% on SmartRest."
+  qs:
+    - [en, "How much is the White Friday discount on sofas?"]
+    - [ar, "كم خصم الجمعة البيضاء على المراتب؟"]
+    - [dia, "وش خصومات الجمعة البيضاء على غرف النوم؟"]
+- doc: promotions_white_friday_2026_mx
+  ev: "قد تصل إلى 10 أيام عمل داخل الرياض"
+  a_ar: "خلال الجمعة البيضاء لا يمكن استخدام أي Promo Code، والكميات محدودة، وقد يصل التوصيل في الرياض إلى 10 أيام عمل."
+  a_en: "During White Friday no promo codes can be combined, quantities are limited, and Riyadh delivery may take up to 10 business days."
+  qs:
+    - [en, "Can I use a promo code during White Friday?"]
+    - [ar, "كم يستغرق التوصيل في الرياض خلال الجمعة البيضاء؟"]
+- doc: crm_guide_agents_mx
+  ev: "الدور: Senior Agent"
+  a_ar: "حدود الاسترداد دون موافقة: الموظف 500 ريال، والموظف الأول 2,000 ريال، والمشرف 10,000 ريال، وما فوق ذلك يحتاج موافقة مدير تجربة العملاء."
+  a_en: "Refund limits without approval: Agent SAR 500, Senior Agent SAR 2,000, Supervisor SAR 10,000; higher amounts need the Customer Experience Manager."
+  qs:
+    - [en, "What is the maximum refund a Senior Agent can approve?"]
+    - [ar, "كم الحد الأقصى للاسترداد الذي يعتمده المشرف بدون موافقة؟"]
+    - [mx, "كم الـrefund limit للـagent العادي؟"]
+- doc: crm_guide_agents_mx
+  ev: "First Contact Resolution لا يقل عن 75%"
+  a_ar: "مؤشرات الأداء الشهرية: First Contact Resolution لا يقل عن 75%، ومتوسط زمن المكالمة أقل من 6 دقائق، وCSAT لا يقل عن 4.3 من 5."
+  a_en: "Monthly KPIs: First Contact Resolution at least 75%, AHT under 6 minutes, CSAT at least 4.3 out of 5."
+  qs:
+    - [en, "What is the CSAT target for customer service agents?"]
+    - [ar, "ما هي مؤشرات الأداء المطلوبة من موظفي خدمة العملاء؟"]
+- doc: crm_guide_agents_mx
+  ev: "التصنيف: Product Quality؛ الكود: PQ"
+  a_ar: "تصنيفات الحالات في الـCRM: Delivery (DLV)، وInstallation (INS)، وProduct Quality (PQ) لعيوب التصنيع والتلف، وBilling (BIL)، وWarranty (WRN)، وGeneral Inquiry (GEN)."
+  a_en: "CRM case categories: Delivery (DLV), Installation (INS), Product Quality (PQ) for manufacturing defects and damage on arrival, Billing (BIL), Warranty (WRN), General Inquiry (GEN)."
+  qs:
+    - [en, "Which CRM category should I use for an item that arrived damaged?"]
+    - [ar, "ما كود تصنيف حالة الفاتورة الخاطئة في الـCRM؟"]
+- doc: kitchens_catalog_mx
+  ev: "Fenix Matt"
+  a_ar: "مطبخ بريميوم KX-800 بأبواب Fenix Matt المقاومة للخدش وسطح كوارتز بسعر تقديري 5,200 ريال للمتر الطولي."
+  a_en: "The Premium kitchen KX-800 has scratch-resistant Fenix Matt doors and a quartz top, at an estimated SAR 5,200 per linear metre."
+  qs:
+    - [en, "How much does the KX-800 kitchen cost per metre?"]
+    - [ar, "أي مطبخ يأتي بسطح كوارتز وكم سعره؟"]
+- doc: kitchens_catalog_mx
+  ev: "ضمان 10 سنوات على الخزائن"
+  a_ar: "ضمان المطابخ 10 سنوات على الخزائن، و5 سنوات على المفصلات والأدراج، وسنتان على الأسطح."
+  a_en: "Kitchen warranty: 10 years on cabinets, 5 years on hinges and drawers, 2 years on countertops."
+  qs:
+    - [en, "What warranty do your kitchens have?"]
+    - [ar, "كم ضمان خزائن المطبخ؟"]
+- doc: kitchens_catalog_mx
+  ev: "40% عند توقيع التصميم"
+  a_ar: "دفعات المطبخ: 40% عند توقيع التصميم، و50% قبل التركيب، و10% بعد التسليم، والتصنيع والتركيب من 4 إلى 6 أسابيع."
+  a_en: "Kitchen payments: 40% at design sign-off, 50% before installation, 10% after handover; manufacturing and installation take 4–6 weeks."
+  qs:
+    - [en, "What is the payment schedule for a kitchen order?"]
+    - [ar, "كم يستغرق تصنيع وتركيب المطبخ؟"]
+- doc: holiday_calendar_2026_en
+  ev: "Saudi National Day"
+  a_ar: "إجازة اليوم الوطني يوم الأربعاء 23 سبتمبر 2026، ويوم التأسيس الأحد 22 فبراير 2026."
+  a_en: "National Day holiday is Wednesday 23 September 2026; Founding Day is Sunday 22 February 2026."
+  qs:
+    - [en, "Is National Day a company holiday in 2026?"]
+    - [ar, "متى إجازة اليوم الوطني 2026 للموظفين؟"]
+- doc: holiday_calendar_2026_en
+  ev: "Eid al-Adha"
+  a_ar: "إجازة عيد الأضحى 2026 من الاثنين 25 مايو حتى الأحد 31 مايو (5 أيام عمل) حسب رؤية الهلال، وعيد الفطر من 19 إلى 25 مارس."
+  a_en: "Eid al-Adha 2026 holiday runs Monday 25 May to Sunday 31 May (5 working days), subject to moon sighting; Eid al-Fitr is 19–25 March."
+  qs:
+    - [en, "How many days off do we get for Eid al-Adha 2026?"]
+    - [ar, "كم أيام إجازة عيد الأضحى للموظفين؟"]
+    - [dia, "إجازة العيد الكبير متى تبدأ؟"]
+- doc: holiday_calendar_2026_en
+  ev: "Showrooms close on the first day of each Eid"
+  a_ar: "تغلق المعارض في أول يوم من كل عيد وتفتح في اليوم الثاني من 4 عصراً، ويغلق الهاتف في أول يوم بينما تبقى المحادثة متاحة."
+  a_en: "Showrooms close on the first day of each Eid and reopen on day two from 4 PM; phone support closes on the first day but app chat stays available."
+  qs:
+    - [en, "Are showrooms open on the first day of Eid?"]
+    - [ar, "هل المعارض مفتوحة أول يوم العيد؟"]
+- doc: procurement_policy_en
+  ev: "SAR 10,001 – 100,000"
+  a_ar: "المشتريات من 10,001 إلى 100,000 ريال تحتاج 3 عروض أسعار مكتوبة وموافقة مدير الإدارة ومدير المشتريات، وتجزئة الطلب لتجنب الحد مخالفة."
+  a_en: "Purchases of SAR 10,001–100,000 need 3 written quotations and approval by the department director and procurement manager; splitting orders to avoid thresholds is a violation."
+  qs:
+    - [en, "How many quotations do I need for a SAR 50,000 purchase?"]
+    - [ar, "من يعتمد شراء بقيمة 80 ألف ريال؟"]
+    - [mx, "هل أقدر أقسم الـPO لطلبين صغار عشان ما أحتاج عروض أسعار؟"]
+- doc: procurement_policy_en
+  ev: "Standard supplier payment terms are 60 days"
+  a_ar: "مدة السداد للموردين 60 يوماً من استلام فاتورة صحيحة، ويمكن الدفع المبكر خلال 15 يوماً مقابل خصم 2% على الأقل."
+  a_en: "Supplier payment terms are 60 days from a valid invoice; early payment within 15 days can be agreed for a discount of at least 2%."
+  qs:
+    - [en, "What are the standard payment terms for suppliers?"]
+    - [ar, "خلال كم يوم تدفع الشركة للموردين؟"]
+- doc: procurement_policy_en
+  ev: "Gifts from suppliers above SAR 200"
+  a_ar: "يجب رفض هدايا الموردين التي تزيد قيمتها عن 200 ريال أو الإبلاغ عنها لإدارة الالتزام، والإفصاح عن أي علاقة بالمورد قبل التقييم."
+  a_en: "Supplier gifts above SAR 200 must be declined or reported to Compliance, and any relationship with a supplier must be declared before evaluations."
+  qs:
+    - [en, "Can I accept a gift from a supplier?"]
+    - [ar, "مورد أهداني ساعة قيمتها 1000 ريال، ماذا أفعل؟"]
+- doc: privacy_data_retention_en
+  ev: "Customer service call recordings"
+  a_ar: "تحفظ تسجيلات مكالمات خدمة العملاء 12 شهراً، وسجلات الطلبات والفواتير 10 سنوات، وصور التركيب 6 أشهر، وتحذف الحسابات غير النشطة بعد 3 سنوات."
+  a_en: "Call recordings are kept 12 months, order and invoice records 10 years, installation photos 6 months, and inactive accounts are deleted after 3 years."
+  qs:
+    - [en, "How long do you keep customer service call recordings?"]
+    - [ar, "متى يتم حذف الحساب غير النشط؟"]
+- doc: privacy_data_retention_en
+  ev: "privacy@saraya-living.sa"
+  a_ar: "يمكن طلب الاطلاع على البيانات أو تصحيحها أو حذفها عبر privacy@saraya-living.sa ويتم الرد خلال 30 يوماً، ولا يشمل الحذف السجلات المطلوبة نظاماً كالفواتير."
+  a_en: "Requests to access, correct or delete data go to privacy@saraya-living.sa and are answered within 30 days; deletion excludes legally required records like invoices."
+  qs:
+    - [en, "How can I ask Saraya to delete my personal data?"]
+    - [ar, "كيف أطلب حذف بياناتي الشخصية؟"]
+    - [mx, "أبغى أسوي delete لبياناتي، وين أرسل الطلب؟"]
+- doc: office_relocation_service_en
+  ev: "Office size: Up to 20 workstations"
+  a_ar: "نقل مكتب حتى 20 مقعد عمل بسعر 6,500 ريال خلال عطلة نهاية أسبوع، ومن 21 إلى 60 مقعداً بـ14,000 ريال، وما فوق بعرض سعر بعد المعاينة."
+  a_en: "Moving an office of up to 20 workstations costs SAR 6,500 over one weekend; 21–60 costs SAR 14,000; larger moves are quoted after a survey."
+  qs:
+    - [en, "How much does it cost to relocate an office with 15 desks?"]
+    - [ar, "كم تكلفة نقل مكتب فيه 40 مقعد عمل؟"]
+- doc: office_relocation_service_en
+  ev: "additional SAR 3,500 per truck"
+  a_ar: "النقل بين المدن عليه 3,500 ريال إضافية لكل شاحنة، والشاحنة تحمل نحو 15 مقعد عمل مع الكراسي والأدراج."
+  a_en: "Inter-city moves add SAR 3,500 per truck; one truck carries about 15 workstations with chairs and pedestals."
+  qs:
+    - [en, "What is the extra cost to move our office from Riyadh to Jeddah?"]
+    - [ar, "كم رسوم نقل المكتب من الرياض إلى الدمام؟"]
+- doc: office_relocation_service_en
+  ev: "one free relocation of up to 60 workstations"
+  a_ar: "مشتركو Professional يحصلون على خصم 15% على النقل، وعملاء الباقة المؤسسية لهم نقل مجاني واحد حتى 60 مقعداً خلال مدة العقد، ويجب الحجز قبل 3 أسابيع."
+  a_en: "Professional subscribers get 15% off relocation, Enterprise customers get one free relocation of up to 60 workstations during the contract; book 3 weeks ahead."
+  qs:
+    - [en, "Do Enterprise customers get a free office move?"]
+    - [ar, "هل يوجد خصم على نقل المكتب لمشتركي باقة Professional؟"]
+- doc: sustainability_report_2025_en
+  ev: "62% of the wood"
+  a_ar: "في 2025 جاء 62% من الخشب من مصادر معتمدة FSC مقارنة بـ48% في 2024، والهدف 85% في 2027."
+  a_en: "In 2025, 62% of the wood came from FSC-certified sources, up from 48% in 2024; the 2027 target is 85%."
+  qs:
+    - [en, "What percentage of wood was FSC certified in 2025?"]
+    - [ar, "ما نسبة الخشب المعتمد من FSC في منتجات سرايا؟"]
+- doc: sustainability_report_2025_en
+  ev: "collected 4,300 items in 2025"
+  a_ar: "جمع برنامج استرجاع الأثاث 4,300 قطعة في 2025، أعيد تجديد 71% منها والتبرع بها أو بيعها في قسم التصفية، والباقي أعيد تدويره."
+  a_en: "The take-back programme collected 4,300 items in 2025; 71% were refurbished and donated or resold through Clearance, and the rest recycled."
+  qs:
+    - [en, "How many items did the furniture take-back programme collect in 2025?"]
+    - [ar, "ماذا يحدث للأثاث القديم الذي تجمعه سرايا؟"]
+- doc: sustainability_report_2025_en
+  ev: "12 electric vans"
+  a_ar: "أضاف أسطول التوصيل 12 شاحنة كهربائية في الرياض، ونفذت 18% من توصيلات الرياض في الربع الرابع، وتوفر الألواح الشمسية نحو 30% من كهرباء مستودع الرياض."
+  a_en: "The fleet added 12 electric vans in Riyadh, which made 18% of Riyadh deliveries in Q4; solar panels supply about 30% of the Riyadh warehouse's electricity."
+  qs:
+    - [en, "How many electric delivery vans does Saraya have?"]
+    - [ar, "هل تستخدم سرايا شاحنات كهربائية للتوصيل؟"]
+- doc: employee_onboarding_en
+  ev: "The probation period is 90 days"
+  a_ar: "فترة التجربة 90 يوماً مع لقاءات متابعة في اليوم 30 و60 وتقييم رسمي في اليوم 85، ولا تطلب الإجازة السنوية إلا بعدها إلا في الطوارئ."
+  a_en: "Probation is 90 days with check-ins at day 30 and 60 and a formal review at day 85; annual leave can only be requested after probation, except emergencies."
+  qs:
+    - [en, "How long is the probation period for new employees?"]
+    - [ar, "هل يمكن للموظف الجديد أخذ إجازة خلال فترة التجربة؟"]
+- doc: employee_onboarding_en
+  ev: "25% staff discount on Saraya products"
+  a_ar: "يحصل الموظفون على خصم 25% على منتجات سرايا بحد أقصى 20,000 ريال مشتريات سنوياً، والتأمين الطبي فئة B للموظفين وA للمدراء من اليوم الأول."
+  a_en: "Employees get a 25% staff discount on Saraya products up to SAR 20,000 of purchases a year; medical insurance (class B staff, class A managers) starts on day 1."
+  qs:
+    - [en, "What is the employee discount on Saraya furniture?"]
+    - [ar, "كم خصم الموظفين على منتجات الشركة؟"]
+    - [en, "When does medical insurance start for new hires?"]
+- doc: employee_onboarding_en
+  ev: "Add dependants within 30 days of joining"
+  a_ar: "يجب إضافة المعالين للتأمين خلال 30 يوماً من الالتحاق، وبعدها فقط عند التجديد السنوي في يناير."
+  a_en: "Dependants must be added to medical insurance within 30 days of joining; later additions only at the annual renewal in January."
+  qs:
+    - [en, "Can I add my wife to the medical insurance three months after joining?"]
+    - [ar, "متى أضيف عائلتي على التأمين الطبي؟"]

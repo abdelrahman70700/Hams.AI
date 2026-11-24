@@ -1,0 +1,43 @@
+# Plausible, on-topic questions whose answer is NOT in the knowledge bank.
+# Used to evaluate abstention ("not found") and to calibrate the reranker-score gate.
+# "near" names the closest document, i.e. the one most likely to tempt a hallucination.
+- {lang: en, q: "What is the maternity leave duration for female employees?", near: hr_leave_policy_ar}
+- {lang: en, q: "Do you sell outdoor garden furniture?", near: product_sofas_ar}
+- {lang: en, q: "What is the API rate limit for the Saraya Business Portal?", near: b2b_portal_user_guide_mx}
+- {lang: en, q: "Who is the CEO of Saraya Living?", near: sustainability_report_2025_en}
+- {lang: en, q: "Is there parking at the Olaya showroom?", near: branches_ar}
+- {lang: en, q: "How much is the annual performance bonus for employees?", near: employee_onboarding_en}
+- {lang: en, q: "What is the noise level of the SmartRest bed motor?", near: smartrest_troubleshooting_mx}
+- {lang: en, q: "Do you offer interior design services for villas?", near: loyalty_program_ar}
+- {lang: en, q: "Is there a student discount?", near: pricing_promotions_faq_mx}
+- {lang: en, q: "What is the warranty on curtains and blinds?", near: policy_warranty_ar}
+- {lang: en, q: "How much is overtime pay for showroom staff?", near: hr_leave_policy_ar}
+- {lang: en, q: "When will the Dammam branch be renovated?", near: branches_ar}
+- {lang: en, q: "What is the repair cost for a SmartRest motor after the warranty expires?", near: policy_warranty_ar}
+- {lang: en, q: "How many employees work at the Jeddah branch?", near: sustainability_report_2025_en}
+- {lang: en, q: "Does the ErgoPro Lite chair come in white?", near: product_office_chairs_en}
+- {lang: ar, q: "ما هي مدة إجازة الأمومة للموظفات؟", near: hr_leave_policy_ar}
+- {lang: ar, q: "كم سعر طقم جلسات الحديقة الخارجية؟", near: product_sofas_ar}
+- {lang: ar, q: "هل تقدمون خدمة تصميم داخلي متكاملة للفلل؟", near: loyalty_program_ar}
+- {lang: ar, q: "ما اسم الرئيس التنفيذي لشركة سرايا؟", near: sustainability_report_2025_en}
+- {lang: ar, q: "هل يوجد مواقف سيارات في فرع العليا؟", near: branches_ar}
+- {lang: ar, q: "كم مكافأة نهاية السنة للموظفين؟", near: employee_onboarding_en}
+- {lang: ar, q: "ما هو ضمان الستائر؟", near: policy_warranty_ar}
+- {lang: ar, q: "متى سيتم افتتاح فرع جديد في أبها؟", near: branches_ar}
+- {lang: ar, q: "كم راتب موظف خدمة العملاء الجديد؟", near: crm_guide_agents_mx}
+- {lang: ar, q: "ما هي ساعات عمل مستودع الدمام؟", near: shipping_gcc_en}
+- {lang: ar, q: "هل يوجد خصم خاص لطلاب الجامعات؟", near: pricing_promotions_faq_mx}
+- {lang: ar, q: "كم وزن كرسي ErgoPro Plus؟", near: product_office_chairs_en}
+- {lang: ar, q: "هل يمكن شحن الطلبات إلى الأردن؟", near: shipping_gcc_en}
+- {lang: ar, q: "كم سعر تركيب الستائر الكهربائية؟", near: policy_installation_ar}
+- {lang: ar, q: "ما هي عروض اليوم الوطني 2026؟", near: promotions_white_friday_2026_mx}
+- {lang: mx, q: "عندكم outdoor furniture للحوش؟", near: product_sofas_ar}
+- {lang: mx, q: "وش الـrate limit حق الـAPI في البوابة؟", near: b2b_portal_user_guide_mx}
+- {lang: mx, q: "كم الـovertime rate لموظفين المعارض؟", near: hr_leave_policy_ar}
+- {lang: mx, q: "فيه maternity leave؟ كم يوم؟", near: hr_leave_policy_ar}
+- {lang: mx, q: "هل الـSmartRest يشتغل مع Alexa أو Google Home؟", near: smartrest_troubleshooting_mx}
+- {lang: mx, q: "كم سعر الـsmart sofa الكهربائية؟", near: product_sofas_ar}
+- {lang: mx, q: "What is the كفالة on outdoor umbrellas?", near: policy_warranty_ar}
+- {lang: mx, q: "Is there a discount for the يوم التأسيس sale?", near: holiday_calendar_2026_en}
+- {lang: dia, q: "عندكم توصيل لعمّان بالأردن؟", near: shipping_gcc_en}
+- {lang: dia, q: "كم يعطون الموظف بونص آخر السنة؟", near: employee_onboarding_en}

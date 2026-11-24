@@ -1,0 +1,186 @@
+# Additional facts/queries on documents that fall in the held-out TEST split (more reliable metrics).
+- doc: assembly_manual_wardrobe_en
+  ev: "Check that the box contains bags A to F"
+  a_ar: "تحتوي العلبة على أكياس من A إلى F، والكيس F فيه دعامة منع الانقلاب للتثبيت على الجدار."
+  a_en: "The box contains bags A to F; bag F holds the anti-tip wall bracket."
+  qs:
+    - [en, "Which bag contains the anti-tip bracket for the Lamar wardrobe?"]
+    - [ar, "في أي كيس توجد قطعة تثبيت الدولاب على الجدار؟"]
+- doc: assembly_manual_wardrobe_en
+  ev: "attach the bottom panel using 6 cam locks from bag A"
+  a_ar: "الخطوة الأولى: ضع اللوحين الجانبيين وثبّت اللوح السفلي بستة أقفال من الكيس A، ثم أدخل الفاصلين بثمانية أوتاد من الكيس B."
+  a_en: "Step 1: lay the side panels flat and fix the bottom panel with 6 cam locks from bag A; then insert the two dividers with 8 dowels from bag B."
+  qs:
+    - [en, "How many cam locks are used to attach the bottom panel of the wardrobe?"]
+    - [ar, "كم عدد الأوتاد المستخدمة لتثبيت الفواصل الوسطى في الدولاب؟"]
+    - [mx, "الـcam locks حق الدولاب في أي كيس؟"]
+- doc: assembly_manual_wardrobe_en
+  ev: "Never lift it by the top panel"
+  a_ar: "يجب رفع الدولاب بشخصين وعدم رفعه أبداً من اللوح العلوي."
+  a_en: "Stand the wardrobe upright with two people and never lift it by the top panel."
+  qs:
+    - [en, "Can I lift the wardrobe by its top panel when standing it up?"]
+    - [ar, "كيف أوقف الدولاب بعد التجميع بشكل آمن؟"]
+- doc: branches_ar
+  ev: "طريق الملك فهد، حي العليا"
+  a_ar: "فرع العليا في الرياض يقع على طريق الملك فهد بحي العليا مقابل برج المملكة، وهاتفه 0114650000."
+  a_en: "The Olaya branch in Riyadh is on King Fahd Road in Al-Olaya, opposite Kingdom Tower; phone 0114650000."
+  qs:
+    - [ar, "وين فرعكم في العليا؟"]
+    - [en, "Is there a Saraya showroom near Kingdom Tower in Riyadh?"]
+    - [en, "What is the phone number of the Olaya branch?"]
+- doc: branches_ar
+  ev: "الدمام – الشاطئ"
+  a_ar: "فرع الدمام يقع على طريق الخليج في حي الشاطئ الغربي، وهاتفه 0138094400."
+  a_en: "The Dammam branch is on Gulf Road in Al-Shatea Al-Gharbi district; phone 0138094400."
+  qs:
+    - [ar, "هل لديكم فرع في الدمام وأين يقع؟"]
+    - [en, "Where is the Dammam showroom located?"]
+    - [mx, "رقم الـbranch حقكم في الدمام كم؟"]
+- doc: branches_ar
+  ev: "من السبت إلى الخميس: من 10 صباحا حتى 11 مساء"
+  a_ar: "تعمل المعارض من السبت إلى الخميس من 10 صباحاً حتى 11 مساءً."
+  a_en: "Showrooms are open Saturday to Thursday from 10 AM to 11 PM."
+  qs:
+    - [en, "What time do showrooms close on weekdays?"]
+    - [ar, "متى يفتح المعرض يوم السبت؟"]
+- doc: care_guide_ar
+  ev: "استخدم مرطب الجلد كل 3 أشهر"
+  a_ar: "ينظف الجلد بقطعة مبللة قليلاً بالماء المقطر ثم يجفف فوراً، ويستخدم مرطب الجلد كل 3 أشهر، ويبعد عن الشمس المباشرة."
+  a_en: "Clean leather with a cloth slightly damp with distilled water and dry it immediately; use leather conditioner every 3 months and keep it out of direct sun."
+  qs:
+    - [en, "How often should I condition a leather sofa?"]
+    - [ar, "كيف أنظف الكنب الجلد؟"]
+    - [dia, "الكنبة الجلد بدت تتشقق، كم مرة لازم أحط لها مرطب؟"]
+- doc: care_guide_ar
+  ev: "استخدم زيت العناية بالخشب كل 6 أشهر"
+  a_ar: "يستخدم زيت العناية بالخشب كل 6 أشهر للأخشاب الطبيعية المصمتة مثل غرفة نجد."
+  a_en: "Use wood care oil every 6 months on solid natural wood such as the Najd bedroom."
+  qs:
+    - [en, "How often should I oil a solid oak bedroom set?"]
+    - [ar, "هل أحتاج لتزييت غرفة النوم الخشب المصمت؟ وكل كم؟"]
+- doc: care_guide_ar
+  ev: "ماء فاترا مع قليل من الصابون المحايد"
+  a_ar: "للبقع الصعبة على الأقمشة المعالجة بالنانو استخدم ماء فاتراً مع قليل من الصابون المحايد."
+  a_en: "For tough stains on nano-treated fabric, use lukewarm water with a little neutral soap."
+  qs:
+    - [en, "How do I remove a coffee stain from a nano-treated fabric sofa?"]
+    - [ar, "بقعة قهوة على الكنبة القماش، كيف أزيلها؟"]
+- doc: crm_guide_agents_mx
+  ev: "DLV-Late-Voucher"
+  a_ar: "يستخدم الـMacro المسمى DLV-Late-Voucher لإبلاغ العميل بقسيمة تعويض التأخير، ولا تعدل المبالغ يدوياً لأنها تحسب آلياً حسب أيام التأخير."
+  a_en: "Use the DLV-Late-Voucher macro to tell the customer about the late-delivery voucher; amounts must not be edited manually because they are calculated from the delay."
+  qs:
+    - [en, "Which CRM macro do I use to tell a customer about a late delivery voucher?"]
+    - [ar, "هل يمكن لموظف خدمة العملاء تعديل مبلغ قسيمة التأخير يدوياً؟"]
+    - [mx, "وش اسم الـmacro حق قسيمة التأخير في الـCRM؟"]
+- doc: crm_guide_agents_mx
+  ev: "متوسط زمن المكالمة AHT أقل من 6 دقائق"
+  a_ar: "هدف متوسط زمن المكالمة AHT أقل من 6 دقائق شهرياً لكل موظف."
+  a_en: "The monthly AHT target is under 6 minutes per agent."
+  qs:
+    - [en, "What is the average handling time target for agents?"]
+    - [ar, "كم المدة المستهدفة للمكالمة الواحدة في خدمة العملاء؟"]
+- doc: expense_policy_en
+  ev: "at least 5 working days before departure"
+  a_ar: "يجب اعتماد رحلات العمل في نظام الموارد البشرية من المدير المباشر قبل 5 أيام عمل على الأقل من السفر، والسفر الدولي يحتاج أيضاً موافقة مدير الإدارة."
+  a_en: "Business travel must be approved by the line manager in the HR system at least 5 working days before departure; international travel also needs the department director."
+  qs:
+    - [en, "How far in advance must business travel be approved?"]
+    - [ar, "من يعتمد سفري لمؤتمر في دبي؟"]
+    - [dia, "عندي رحلة عمل لجدة الأسبوع الجاي، متى لازم أرفع الطلب؟"]
+- doc: expense_policy_en
+  ev: "City: GCC capitals"
+  a_ar: "حد الفندق في عواصم الخليج 800 ريال لليلة للموظفين و1,100 ريال للمدراء فما فوق."
+  a_en: "Hotel limits in GCC capitals are SAR 800 per night for staff and SAR 1,100 for managers and above."
+  qs:
+    - [en, "What is the hotel cap for a staff member traveling to Dubai?"]
+    - [ar, "كم حد الفندق للمدير عند السفر إلى المنامة؟"]
+- doc: expense_policy_en
+  ev: "deducted at SAR 60 per meal"
+  a_ar: "يخصم 60 ريالاً من البدل اليومي عن كل وجبة يقدمها عميل أو مؤتمر."
+  a_en: "Each meal provided by a client or conference is deducted from the per diem at SAR 60."
+  qs:
+    - [en, "If lunch is provided at the conference, is my per diem reduced?"]
+    - [ar, "إذا قدم المؤتمر وجبة الغداء، هل ينقص البدل اليومي؟"]
+- doc: hr_remote_work_ar
+  ev: "يجب حضور جميع أعضاء الفريق يوم الثلاثاء"
+  a_ar: "يجب حضور جميع أعضاء الفريق يوم الثلاثاء للاجتماعات الأسبوعية، والعمل عن بعد يكون يوم الأحد أو الخميس فقط."
+  a_en: "All team members must be in the office on Tuesdays for weekly meetings; remote days are Sunday or Thursday only."
+  qs:
+    - [en, "Can I work from home on Tuesday?"]
+    - [ar, "أي يوم يجب أن يحضر فيه الجميع إلى المكتب؟"]
+- doc: hr_remote_work_ar
+  ev: "بعد إكمال فترة التجربة البالغة 90 يوما"
+  a_ar: "لا يحق العمل عن بعد إلا بعد إكمال فترة التجربة البالغة 90 يوماً."
+  a_en: "Remote work is allowed only after completing the 90-day probation period."
+  qs:
+    - [en, "Can a new hire work remotely during probation?"]
+    - [ar, "توظفت قبل شهر في المالية، هل يحق لي العمل من البيت؟"]
+- doc: incident_severity_guide_en
+  ev: "P3 – Medium"
+  a_ar: "P3 متوسطة: عيب في قطعة واحدة أو خلل بسيط، مثل خزانة أدراج بقفل مكسور، وP4 منخفضة للأمور الشكلية والأسئلة مثل خدش على سطح المكتب."
+  a_en: "P3 Medium is a single defective item or minor issue, e.g. a drawer pedestal with a broken lock; P4 Low covers cosmetic issues and questions, e.g. a scratched desk."
+  qs:
+    - [en, "What priority is a scratched desk surface?"]
+    - [ar, "قفل خزانة الأدراج مكسور، ما أولوية التذكرة؟"]
+    - [mx, "خدش بسيط على الـdesk، أفتحه P كم؟"]
+- doc: incident_severity_guide_en
+  ev: "P2 – High"
+  a_ar: "P2 عالية: تعطل وظيفة رئيسية لعدة مستخدمين مع وجود حل مؤقت، مثل 10 كراسي أو أكثر بها عطل في مكبس الغاز في طابق واحد."
+  a_en: "P2 High: a major function is impaired for several users with a workaround, e.g. 10 or more chairs with failed gas lifts on one floor."
+  qs:
+    - [en, "Twelve chairs on our floor have broken gas lifts. Which priority applies?"]
+    - [ar, "ما تعريف الأولوية العالية P2؟"]
+    - [mx, "لو عشرة كراسي فيها مشكلة الـgas lift، وش تكون الـpriority؟"]
+- doc: pricing_promotions_faq_mx
+  ev: "بعض العروض حصرية Online-only"
+  a_ar: "بعض العروض حصرية للتطبيق Online-only، وخارج فترات العروض أسعار المعارض والتطبيق متطابقة."
+  a_en: "Some offers are online-only in the app; outside promotions, showroom and app prices are identical."
+  qs:
+    - [en, "Why is the price in the app lower than in the showroom?"]
+    - [ar, "لماذا يختلف السعر بين التطبيق والمعرض؟"]
+- doc: pricing_promotions_faq_mx
+  ev: "بحد أقصى 300 ريال"
+  a_ar: "الحد الأقصى لخصم كود WELCOME10 هو 300 ريال، والحد الأدنى للطلب 1,000 ريال."
+  a_en: "The WELCOME10 discount is capped at SAR 300 and needs a minimum order of SAR 1,000."
+  qs:
+    - [en, "What is the maximum discount with the welcome code on a SAR 5,000 order?"]
+    - [ar, "طلبي بـ800 ريال، هل ينفع معه كود الترحيب؟"]
+- doc: product_bedrooms_ar
+  ev: "الأسعار لا تشمل المراتب"
+  a_ar: "أسعار غرف النوم لا تشمل المراتب، وجميعها يشملها التركيب المجاني في المدن التي نوصل إليها."
+  a_en: "Bedroom prices do not include mattresses, and all bedrooms include free installation in the cities we deliver to."
+  qs:
+    - [en, "Does the bedroom set price include the mattress?"]
+    - [ar, "هل سعر غرفة النوم يشمل المرتبة والتركيب؟"]
+    - [dia, "غرفة النوم تجي مع مرتبة ولا أشتريها لحالها؟"]
+- doc: product_bedrooms_ar
+  ev: "سرير مفرد 90×190 سم"
+  a_ar: "سرير غرفة أطفال سما مفرد مقاس 90×190 سم بحواف دائرية آمنة."
+  a_en: "The Sama kids' bed is a 90×190 cm single with rounded safety edges."
+  qs:
+    - [en, "What size is the bed in the Sama kids room?"]
+    - [ar, "مقاس سرير غرفة الأطفال كم؟"]
+- doc: product_bedrooms_ar
+  ev: "دولاب 4 أبواب بعرض 200 سم"
+  a_ar: "دولاب غرفة نوم ريم بأربعة أبواب وعرض 200 سم، وسريرها مقاس 180×200 سم."
+  a_en: "The Reem bedroom wardrobe has 4 doors and is 200 cm wide; the bed is 180×200 cm."
+  qs:
+    - [en, "How wide is the wardrobe in the Reem bedroom set?"]
+    - [ar, "كم عدد أبواب دولاب غرفة ريم وما عرضه؟"]
+- doc: sustainability_report_2025_en
+  ev: "Plastic packaging per delivery was reduced by 35%"
+  a_ar: "انخفض التغليف البلاستيكي لكل توصيلة بنسبة 35% مقارنة بعام 2023 باستخدام أغطية أثاث قابلة لإعادة الاستخدام."
+  a_en: "Plastic packaging per delivery fell by 35% compared with 2023 by using reusable furniture blankets for local deliveries."
+  qs:
+    - [en, "By how much did Saraya reduce plastic packaging?"]
+    - [ar, "هل قللت سرايا استخدام البلاستيك في التغليف؟"]
+- doc: sustainability_report_2025_en
+  ev: "Saraya employed 1,240 people at the end of 2025"
+  a_ar: "كان لدى سرايا 1,240 موظفاً بنهاية 2025، والسعوديون 58% من القوى العاملة، والنساء 41% من وظائف المكتب الرئيسي."
+  a_en: "Saraya had 1,240 employees at the end of 2025; Saudi nationals were 58% of the workforce and women 41% of head-office roles."
+  qs:
+    - [en, "How many employees did Saraya have at the end of 2025?"]
+    - [ar, "ما نسبة السعوديين في القوى العاملة لدى سرايا؟"]
+    - [mx, "كم نسبة الـwomen في وظائف الـhead office؟"]

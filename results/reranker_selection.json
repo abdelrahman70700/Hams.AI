@@ -1,0 +1,84 @@
+{
+ "candidates": [
+  {
+   "dir": "models/gte-reranker-saraya-ft",
+   "base_model": "Alibaba-NLP/gte-multilingual-reranker-base",
+   "val_mrr_before": 0.8776,
+   "val_mrr_after": 0.1488,
+   "learning_rate": null,
+   "denoise_margin": null,
+   "bf16": true,
+   "improved": false
+  },
+  {
+   "dir": "models/gte-reranker-saraya-ft_dn",
+   "base_model": "Alibaba-NLP/gte-multilingual-reranker-base",
+   "val_mrr_before": 0.8776,
+   "val_mrr_after": 0.1635,
+   "learning_rate": 1e-05,
+   "denoise_margin": 1.0,
+   "bf16": true,
+   "improved": false
+  },
+  {
+   "dir": "models/gte-reranker-saraya-ft_lr2e6_dn",
+   "base_model": "Alibaba-NLP/gte-multilingual-reranker-base",
+   "val_mrr_before": 0.8776,
+   "val_mrr_after": 0.9386,
+   "learning_rate": 2e-06,
+   "denoise_margin": 1.0,
+   "bf16": false,
+   "improved": true
+  },
+  {
+   "dir": "models/gte-reranker-saraya-ft_lr2e6_fp32",
+   "base_model": "Alibaba-NLP/gte-multilingual-reranker-base",
+   "val_mrr_before": 0.8776,
+   "val_mrr_after": 0.9232,
+   "learning_rate": 2e-06,
+   "denoise_margin": null,
+   "bf16": false,
+   "improved": true
+  },
+  {
+   "dir": "models/gte-reranker-saraya-ft_lr5e6_bf16",
+   "base_model": "Alibaba-NLP/gte-multilingual-reranker-base",
+   "val_mrr_before": 0.8776,
+   "val_mrr_after": 0.8678,
+   "learning_rate": 5e-06,
+   "denoise_margin": null,
+   "bf16": true,
+   "improved": false
+  },
+  {
+   "dir": "models/gte-reranker-saraya-ft_lr5e6_fp32",
+   "base_model": "Alibaba-NLP/gte-multilingual-reranker-base",
+   "val_mrr_before": 0.8776,
+   "val_mrr_after": 0.8554,
+   "learning_rate": 5e-06,
+   "denoise_margin": null,
+   "bf16": false,
+   "improved": false
+  },
+  {
+   "dir": "models/mminilm-saraya-ft",
+   "base_model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+   "val_mrr_before": 0.856,
+   "val_mrr_after": 0.8779,
+   "learning_rate": 2e-05,
+   "denoise_margin": 1.0,
+   "bf16": true,
+   "improved": true
+  }
+ ],
+ "chosen": {
+  "dir": "models/gte-reranker-saraya-ft_lr2e6_dn",
+  "base_model": "Alibaba-NLP/gte-multilingual-reranker-base",
+  "val_mrr_before": 0.8776,
+  "val_mrr_after": 0.9386,
+  "learning_rate": 2e-06,
+  "denoise_margin": 1.0,
+  "bf16": false,
+  "improved": true
+ }
+}

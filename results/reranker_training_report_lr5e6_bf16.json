@@ -1,0 +1,46 @@
+{
+ "base_model": "Alibaba-NLP/gte-multilingual-reranker-base",
+ "pairs": 2120,
+ "queries": 265,
+ "miner": "e5-base-ft",
+ "learning_rate": 5e-06,
+ "warmup_ratio": 0.2,
+ "eval_steps": 15,
+ "improved_on_validation": false,
+ "trainable_params_M": 113.9,
+ "total_params_M": 306.0,
+ "train_seconds": 201.2,
+ "peak_gpu_mem_GiB": 2.96,
+ "bf16": true,
+ "config": {
+  "base": "gte-rerank",
+  "output": "models/gte-reranker-saraya-ft",
+  "freeze_word_embeddings": true,
+  "negatives_per_query": 7,
+  "miner_embedder": "e5-base-ft",
+  "epochs": 2,
+  "batch_size": 8,
+  "gradient_accumulation": 4,
+  "learning_rate": 2e-05,
+  "warmup_ratio": 0.1,
+  "weight_decay": 0.01,
+  "max_length": 384
+ },
+ "validation_before": {
+  "val_map": 0.8776315789473683,
+  "val_mrr@10": 0.8776315789473683,
+  "val_ndcg@10": 0.9070720482161494,
+  "val_base_map": 0.5808175742386269,
+  "val_base_mrr@10": 0.5642857142857143,
+  "val_base_ndcg@10": 0.6118560601164843
+ },
+ "validation_after": {
+  "val_map": 0.8677944862155388,
+  "val_mrr@10": 0.8677944862155388,
+  "val_ndcg@10": 0.9052051225774067,
+  "val_base_map": 0.5808175742386269,
+  "val_base_mrr@10": 0.5642857142857143,
+  "val_base_ndcg@10": 0.6118560601164843
+ },
+ "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU"
+}
