@@ -252,7 +252,7 @@ document replaces its chunks.
    "وبعد خمس سنوات؟" after a first question). **Before vs after** runs the same question through the base
    and the fine-tuned retrievers side by side.
 4. Add documents from the left panel (PDF, DOCX, HTML, Markdown or TXT, up to 25 MB); they are
-   searchable right away.
+   searchable right away. [`demo/sample_docs/`](demo/sample_docs/) has files in each format to try.
 
 The API documentation is at http://127.0.0.1:8010/docs.
 
