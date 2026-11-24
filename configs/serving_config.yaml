@@ -1,0 +1,28 @@
+# Runtime configuration for the API / infer.py. Every value here is used by hamsrag.retrieval
+# and hamsrag.rag; changing it does not require code changes.
+index_dir: data/index
+embedder: e5-base-ft          # key in configs/models.yaml (base model: e5-base)
+reranker: reranker-ft       # key in configs/models.yaml, set by scripts/select_reranker.py (base: gte-rerank)
+retrieval:
+  bm25_k: 50                  # candidates from BM25
+  dense_k: 50                 # candidates from dense retrieval
+  fusion: rrf                 # rrf | union (dense top-(rerank_k - union_bm25) + BM25 top-union_bm25, ordered by RRF)
+  union_bm25: 5
+  rrf_k: 5                   # RRF constant
+  rrf_weights: {bm25: 1.0, dense: 5.0}   # tuned on validation by benchmark_retrieval.py --tune
+  rerank_k: 20                # fused candidates sent to the cross-encoder
+  context_k: 4                # chunks given to the LLM
+  abstain_threshold: 0.0967 # reranker logit below which we answer "not found" (calibrated)
+quick_search:
+  k: 10
+  snippet_chars: 220
+llm:
+  base_url: http://127.0.0.1:8080/v1
+  model: qwen
+  max_tokens: 320
+  temperature: 0.1
+  timeout_s: 60
+  rewrite_max_tokens: 48
+sessions:
+  db: data/sessions.sqlite
+  max_turns_in_prompt: 4

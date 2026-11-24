@@ -1,0 +1,26 @@
+{"qid": "unans:1", "query": "Do you sell outdoor garden furniture?", "qtype": "en", "answer_lang": "en", "near_doc": "product_sofas_ar", "gold": [], "unanswerable": true}
+{"qid": "unans:2", "query": "What is the API rate limit for the Saraya Business Portal?", "qtype": "en", "answer_lang": "en", "near_doc": "b2b_portal_user_guide_mx", "gold": [], "unanswerable": true}
+{"qid": "unans:4", "query": "Is there parking at the Olaya showroom?", "qtype": "en", "answer_lang": "en", "near_doc": "branches_ar", "gold": [], "unanswerable": true}
+{"qid": "unans:5", "query": "How much is the annual performance bonus for employees?", "qtype": "en", "answer_lang": "en", "near_doc": "employee_onboarding_en", "gold": [], "unanswerable": true}
+{"qid": "unans:7", "query": "Do you offer interior design services for villas?", "qtype": "en", "answer_lang": "en", "near_doc": "loyalty_program_ar", "gold": [], "unanswerable": true}
+{"qid": "unans:8", "query": "Is there a student discount?", "qtype": "en", "answer_lang": "en", "near_doc": "pricing_promotions_faq_mx", "gold": [], "unanswerable": true}
+{"qid": "unans:10", "query": "How much is overtime pay for showroom staff?", "qtype": "en", "answer_lang": "en", "near_doc": "hr_leave_policy_ar", "gold": [], "unanswerable": true}
+{"qid": "unans:11", "query": "When will the Dammam branch be renovated?", "qtype": "en", "answer_lang": "en", "near_doc": "branches_ar", "gold": [], "unanswerable": true}
+{"qid": "unans:13", "query": "How many employees work at the Jeddah branch?", "qtype": "en", "answer_lang": "en", "near_doc": "sustainability_report_2025_en", "gold": [], "unanswerable": true}
+{"qid": "unans:14", "query": "Does the ErgoPro Lite chair come in white?", "qtype": "en", "answer_lang": "en", "near_doc": "product_office_chairs_en", "gold": [], "unanswerable": true}
+{"qid": "unans:16", "query": "كم سعر طقم جلسات الحديقة الخارجية؟", "qtype": "ar", "answer_lang": "ar", "near_doc": "product_sofas_ar", "gold": [], "unanswerable": true}
+{"qid": "unans:17", "query": "هل تقدمون خدمة تصميم داخلي متكاملة للفلل؟", "qtype": "ar", "answer_lang": "ar", "near_doc": "loyalty_program_ar", "gold": [], "unanswerable": true}
+{"qid": "unans:19", "query": "هل يوجد مواقف سيارات في فرع العليا؟", "qtype": "ar", "answer_lang": "ar", "near_doc": "branches_ar", "gold": [], "unanswerable": true}
+{"qid": "unans:20", "query": "كم مكافأة نهاية السنة للموظفين؟", "qtype": "ar", "answer_lang": "ar", "near_doc": "employee_onboarding_en", "gold": [], "unanswerable": true}
+{"qid": "unans:22", "query": "متى سيتم افتتاح فرع جديد في أبها؟", "qtype": "ar", "answer_lang": "ar", "near_doc": "branches_ar", "gold": [], "unanswerable": true}
+{"qid": "unans:23", "query": "كم راتب موظف خدمة العملاء الجديد؟", "qtype": "ar", "answer_lang": "ar", "near_doc": "crm_guide_agents_mx", "gold": [], "unanswerable": true}
+{"qid": "unans:25", "query": "هل يوجد خصم خاص لطلاب الجامعات؟", "qtype": "ar", "answer_lang": "ar", "near_doc": "pricing_promotions_faq_mx", "gold": [], "unanswerable": true}
+{"qid": "unans:26", "query": "كم وزن كرسي ErgoPro Plus؟", "qtype": "ar", "answer_lang": "ar", "near_doc": "product_office_chairs_en", "gold": [], "unanswerable": true}
+{"qid": "unans:28", "query": "كم سعر تركيب الستائر الكهربائية؟", "qtype": "ar", "answer_lang": "ar", "near_doc": "policy_installation_ar", "gold": [], "unanswerable": true}
+{"qid": "unans:29", "query": "ما هي عروض اليوم الوطني 2026؟", "qtype": "ar", "answer_lang": "ar", "near_doc": "promotions_white_friday_2026_mx", "gold": [], "unanswerable": true}
+{"qid": "unans:31", "query": "وش الـrate limit حق الـAPI في البوابة؟", "qtype": "mx", "answer_lang": "ar", "near_doc": "b2b_portal_user_guide_mx", "gold": [], "unanswerable": true}
+{"qid": "unans:32", "query": "كم الـovertime rate لموظفين المعارض؟", "qtype": "mx", "answer_lang": "ar", "near_doc": "hr_leave_policy_ar", "gold": [], "unanswerable": true}
+{"qid": "unans:34", "query": "هل الـSmartRest يشتغل مع Alexa أو Google Home؟", "qtype": "mx", "answer_lang": "ar", "near_doc": "smartrest_troubleshooting_mx", "gold": [], "unanswerable": true}
+{"qid": "unans:35", "query": "كم سعر الـsmart sofa الكهربائية؟", "qtype": "mx", "answer_lang": "ar", "near_doc": "product_sofas_ar", "gold": [], "unanswerable": true}
+{"qid": "unans:37", "query": "Is there a discount for the يوم التأسيس sale?", "qtype": "mx", "answer_lang": "en", "near_doc": "holiday_calendar_2026_en", "gold": [], "unanswerable": true}
+{"qid": "unans:38", "query": "عندكم توصيل لعمّان بالأردن؟", "qtype": "dia", "answer_lang": "ar", "near_doc": "shipping_gcc_en", "gold": [], "unanswerable": true}

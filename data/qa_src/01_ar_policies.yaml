@@ -1,0 +1,142 @@
+# Each fact: doc (doc_id), ev (evidence phrase that must appear in the gold chunk),
+# a_ar / a_en (reference answers), qs: list of [type, query]. Types: ar, en, mx (code-switched), dia (Saudi dialect)
+- doc: policy_returns_ar
+  ev: "يحق للعميل استرجاع المنتج خلال 14 يوما"
+  a_ar: "يمكن استرجاع المنتج خلال 14 يوماً من تاريخ الاستلام إذا كان بحالته الأصلية وغير مستخدم ومعه الفاتورة، والاستبدال متاح خلال 30 يوماً."
+  a_en: "You can return a product within 14 days of receiving it if it is unused, in its original condition and with the invoice; exchanges are allowed within 30 days."
+  qs:
+    - [ar, "كم يوم مهلة استرجاع المنتجات بعد الاستلام؟"]
+    - [ar, "اشتريت طاولة قبل عشرة أيام ولم أستخدمها وما زالت في كرتونها، هل ما زال بإمكاني إرجاعها واسترداد المبلغ وما الشروط المطلوبة؟"]
+    - [en, "How many days do I have to return a product after delivery?"]
+    - [en, "What is the deadline for exchanging an item for a different product?"]
+    - [dia, "كم يوم أقدر أرجع الغرض بعد ما يوصلني؟"]
+- doc: policy_returns_ar
+  ev: "إذا تأخر توصيل الطلب أكثر من 7 أيام عمل"
+  a_ar: "إذا تأخر التوصيل أكثر من 7 أيام عمل عن الموعد المؤكد يحق للعميل إلغاء الطلب واسترداد كامل المبلغ بما فيه رسوم التوصيل والتركيب دون رسوم إلغاء، ما لم يكن التأخير بطلب من العميل."
+  a_en: "If delivery is more than 7 business days late versus the confirmed date, the customer can cancel and get a full refund including delivery and installation fees, with no cancellation fee, unless the delay was requested by the customer."
+  qs:
+    - [ar, "ما هي سياسة الاسترجاع للطلبات المتأخرة؟"]
+    - [ar, "طلبي تأخر عن الموعد المحدد أكثر من أسبوع، هل يحق لي إلغاؤه واسترداد رسوم التوصيل والتركيب أيضاً؟"]
+    - [en, "Can I cancel my order and get a full refund if the delivery is very late?"]
+    - [mx, "لو الـdelivery تأخر كثير، أقدر أعمل cancel للطلب وأسترجع كامل المبلغ؟"]
+- doc: policy_returns_ar
+  ev: "رسوم إعادة تخزين بنسبة 10%"
+  a_ar: "المنتجات المفتوحة والمركبة التي تُرجع تخضع لرسوم إعادة تخزين 10% من قيمة المنتج بحد أقصى 500 ريال، ولا تطبق إذا كان المنتج معيباً أو تالفاً."
+  a_en: "Opened and assembled items that are returned carry a 10% restocking fee, capped at SAR 500; it is waived for defective or damaged items."
+  qs:
+    - [ar, "هل توجد رسوم عند إرجاع منتج تم فتحه وتركيبه؟"]
+    - [en, "Is there a restocking fee if I return furniture that was already assembled?"]
+    - [en, "What is the maximum restocking fee for returned items?"]
+    - [mx, "كم الـrestocking fee لو رجعت كنبة بعد ما تم تركيبها؟"]
+- doc: policy_returns_ar
+  ev: "يعاد المبلغ بنفس وسيلة الدفع الأصلية خلال 5 إلى 10 أيام عمل"
+  a_ar: "يُعاد المبلغ بنفس وسيلة الدفع خلال 5 إلى 10 أيام عمل من استلام المرتجع في المستودع، وفي حالة الدفع نقداً يحول إلى الآيبان خلال 10 أيام عمل."
+  a_en: "Refunds go back to the original payment method within 5 to 10 business days after the warehouse receives the item; cash-on-delivery refunds are transferred to the customer's IBAN within 10 business days."
+  qs:
+    - [ar, "متى يرجع لي المبلغ بعد إرجاع المنتج؟"]
+    - [en, "How long does a refund take after I return an item?"]
+    - [en, "I paid cash on delivery. How will I get my refund?"]
+    - [dia, "دفعت كاش وقت الاستلام، كيف بيرجعون لي فلوسي؟"]
+- doc: policy_returns_ar
+  ev: "المنتجات المصنوعة حسب الطلب"
+  a_ar: "لا يمكن استرجاع المنتجات المصنوعة حسب الطلب، والمراتب والوسائد بعد إزالة الغلاف (إلا ضمن برنامج التجربة)، ومنتجات التصفية النهائية، وبطاقات الهدايا."
+  a_en: "Made-to-order items, mattresses and pillows once unwrapped (except under the mattress trial), Clearance items and gift cards cannot be returned."
+  qs:
+    - [ar, "ما المنتجات التي لا يمكن إرجاعها؟"]
+    - [en, "Which products are non-returnable?"]
+    - [mx, "هل أقدر أرجع منتج اشتريته من الـClearance؟"]
+- doc: policy_returns_ar
+  ev: "رسوم استلام قدرها 150 ريالا"
+  a_ar: "الاستلام مجاني في الرياض وجدة والدمام، وفي بقية المدن يدفع العميل 150 ريالاً إلا إذا كان سبب الإرجاع عيباً في المنتج."
+  a_en: "Return pickup is free in Riyadh, Jeddah and Dammam; in other cities the customer pays SAR 150 unless the item is defective."
+  qs:
+    - [ar, "أسكن في تبوك وأريد إرجاع منتج، هل أدفع رسوم استلام؟"]
+    - [en, "Do I pay a pickup fee to return an item if I live outside Riyadh, Jeddah and Dammam?"]
+- doc: delivery_late_compensation_ar
+  ev: "من 4 إلى 7 أيام عمل"
+  a_ar: "عند تأخر التوصيل يحصل العميل تلقائياً على قسيمة: 50 ريالاً لتأخير يوم إلى 3 أيام عمل، و100 ريال من 4 إلى 7 أيام، و200 ريال (أو الإلغاء) لأكثر من 7 أيام."
+  a_en: "Late deliveries get an automatic voucher: SAR 50 for 1–3 business days late, SAR 100 for 4–7 days, and SAR 200 (or cancellation) for more than 7 days."
+  qs:
+    - [ar, "ما التعويض الذي أحصل عليه إذا تأخر التوصيل خمسة أيام؟"]
+    - [ar, "هل تعطون قسيمة تعويض عند تأخر التوصيل وكم قيمتها؟"]
+    - [en, "What compensation do I get if my delivery arrives 2 days late?"]
+    - [en, "How much is the late delivery voucher for a delay of 4 to 7 business days?"]
+    - [mx, "وش الـcompensation لو الطلب وصل متأخر ٣ أيام؟"]
+- doc: delivery_late_compensation_ar
+  ev: "صالحة لمدة 90 يوما من تاريخ الإصدار"
+  a_ar: "قسيمة التعويض تصل برسالة خلال 48 ساعة من التوصيل، صالحة 90 يوماً، لا تستبدل نقداً، والحد الأدنى للطلب عند استخدامها 500 ريال."
+  a_en: "The compensation voucher arrives by SMS within 48 hours of delivery, is valid for 90 days, cannot be exchanged for cash, and requires a minimum order of SAR 500."
+  qs:
+    - [ar, "كم مدة صلاحية قسيمة تعويض التأخير وهل لها حد أدنى للطلب؟"]
+    - [en, "How long is the late-delivery voucher valid?"]
+    - [dia, "القسيمة اللي جتني بسبب التأخير متى تخلص صلاحيتها؟"]
+- doc: delivery_late_compensation_ar
+  ev: "ظروف قاهرة مثل العواصف الرملية"
+  a_ar: "لا يصرف التعويض عند الظروف القاهرة مثل العواصف الرملية والأمطار الغزيرة مع تحذيرات رسمية، أو عدم تواجد العميل، أو عدم توفر مصعد لم يبلغ عنه."
+  a_en: "No compensation is paid for force majeure such as sandstorms or heavy rain with official warnings, if the customer was not present, or if a needed elevator was unavailable and not reported."
+  qs:
+    - [ar, "متى لا يتم صرف تعويض تأخر التوصيل؟"]
+    - [en, "Is late delivery compensation paid if the delay was caused by a sandstorm?"]
+- doc: policy_warranty_ar
+  ev: "الفئة: غرف النوم"
+  a_ar: "ضمان غرف النوم 5 سنوات على الهيكل الخشبي أو المعدني، وسنتان على الأقمشة والجلود، وسنتان على الآليات والإكسسوارات."
+  a_en: "Bedrooms have a 5-year warranty on the wooden or metal frame and 2 years on fabrics/leather and on mechanisms and accessories."
+  qs:
+    - [ar, "كم مدة الضمان على غرف النوم؟"]
+    - [ar, "ما هي مدة الضمان على هيكل غرفة النوم وعلى الأقمشة؟"]
+    - [en, "What is the warranty period for bedroom furniture?"]
+    - [dia, "غرفة النوم كم سنة ضمانها؟"]
+- doc: policy_warranty_ar
+  ev: "10 سنوات ضد الهبوط أكثر من 3 سم"
+  a_ar: "ضمان المراتب 10 سنوات ضد الهبوط أكثر من 3 سم."
+  a_en: "Mattresses are guaranteed for 10 years against sagging of more than 3 cm."
+  qs:
+    - [ar, "هل للمراتب ضمان وكم مدته؟"]
+    - [en, "How long is the mattress warranty and what does it cover?"]
+    - [mx, "الـmattress warranty كم سنة؟"]
+- doc: policy_warranty_ar
+  ev: "3 سنوات على المحرك"
+  a_ar: "السرير الذكي SmartRest عليه ضمان 5 سنوات على الهيكل وسنة على الأقمشة و3 سنوات على المحرك."
+  a_en: "The SmartRest smart bed has a 5-year frame warranty, 1 year on fabrics and 3 years on the motor."
+  qs:
+    - [ar, "كم ضمان محرك السرير الذكي؟"]
+    - [en, "What warranty does the SmartRest bed motor have?"]
+- doc: policy_warranty_ar
+  ev: "ضمان ممتد لسنتين إضافيتين"
+  a_ar: "يمكن شراء ضمان ممتد لسنتين إضافيتين على غرف النوم والكنب بنسبة 8% من قيمة المنتج خلال 30 يوماً من التوصيل."
+  a_en: "An extended warranty adding 2 years is available for bedrooms and sofas at 8% of the product price, if bought within 30 days of delivery."
+  qs:
+    - [ar, "هل يوجد ضمان ممتد وكم تكلفته؟"]
+    - [en, "Can I buy an extended warranty for my sofa, and how much does it cost?"]
+    - [mx, "أبي extended warranty على الكنبة، كم سعره ومتى لازم أشتريه؟"]
+- doc: policy_warranty_ar
+  ev: "ويكون ضمانها 6 أشهر فقط على الهيكل"
+  a_ar: "منتجات التصفية النهائية ضمانها 6 أشهر فقط على الهيكل، ولا يشمل الضمان سوء الاستخدام أو التآكل الطبيعي أو التعديل من جهة غير معتمدة."
+  a_en: "Clearance items have only a 6-month frame warranty; the warranty excludes misuse, normal wear and modifications by unauthorised parties."
+  qs:
+    - [ar, "ما لا يشمله الضمان؟"]
+    - [en, "Is there a warranty on clearance items?"]
+- doc: warranty_claim_procedure_ar
+  ev: "يبدأ بالحرفين WR"
+  a_ar: "تقدم المطالبة من صفحة طلباتي ثم طلب صيانة أو ضمان، أو عبر الرقم الموحد 920004488، أو في أي فرع، وتصلك رسالة برقم مطالبة يبدأ بـWR."
+  a_en: "Submit a claim from My Orders > Maintenance or warranty request, by calling 920004488, or at any branch; you receive a claim number starting with WR."
+  qs:
+    - [ar, "كيف أقدم مطالبة ضمان على منتج معيب؟"]
+    - [en, "How do I file a warranty claim?"]
+    - [en, "What does a warranty claim number start with?"]
+    - [dia, "عندي كرسي خربان وهو بالضمان، وش أسوي عشان أرفع طلب؟"]
+- doc: warranty_claim_procedure_ar
+  ev: "يتم الإصلاح خلال 10 أيام عمل"
+  a_ar: "بعد اعتماد المطالبة يتم الإصلاح خلال 10 أيام عمل، وإذا تعذر يستبدل المنتج، ولا تتجدد مدة الضمان بعد الإصلاح."
+  a_en: "After approval the repair is done within 10 business days; if it cannot be repaired the product is replaced, and the warranty period does not restart after a repair."
+  qs:
+    - [ar, "كم يستغرق إصلاح المنتج بعد اعتماد مطالبة الضمان؟"]
+    - [en, "Does the warranty period restart after a repair?"]
+    - [en, "What happens if my product cannot be repaired under warranty and the model is discontinued?"]
+- doc: warranty_claim_procedure_ar
+  ev: "ثلاث صور على الأقل"
+  a_ar: "تحتاج رقم الطلب أو الفاتورة، وثلاث صور على الأقل للعيب من زوايا مختلفة، وفيديو قصير إذا كان العيب في آلية متحركة."
+  a_en: "You need the order or invoice number, at least three photos of the defect from different angles, and a short video if a moving mechanism is affected."
+  qs:
+    - [ar, "ما المستندات والصور المطلوبة لمطالبة الضمان؟"]
+    - [en, "How many photos do I need to attach to a warranty claim?"]

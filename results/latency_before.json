@@ -1,0 +1,145 @@
+{
+ "hardware": {
+  "platform": "Windows-10-10.0.26200-SP0",
+  "cpu": "Intel64 Family 6 Model 141 Stepping 1, GenuineIntel",
+  "cpu_threads": 16,
+  "ram_GiB": 15.7,
+  "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "gpu_mem_GiB": 4.0
+ },
+ "device": "auto",
+ "embedder": "e5-base",
+ "reranker": "gte-rerank",
+ "llm": {
+  "base_url": "http://127.0.0.1:8080/v1",
+  "model": "qwen",
+  "max_tokens": 320,
+  "temperature": 0.1,
+  "timeout_s": 60,
+  "rewrite_max_tokens": 48
+ },
+ "n_queries": 60,
+ "per_mode": {
+  "quick_search": {
+   "total": {
+    "n": 60,
+    "avg": 0.74,
+    "p50": 0.7,
+    "p95": 1.12,
+    "max": 2.05
+   },
+   "search": {
+    "n": 60,
+    "avg": 0.19,
+    "p50": 0.15,
+    "p95": 0.34,
+    "max": 1.52
+   },
+   "preprocessing": {
+    "n": 60,
+    "avg": 0.02,
+    "p50": 0.02,
+    "p95": 0.04,
+    "max": 0.05
+   }
+  },
+  "retrieval_only(hybrid+rerank)": {
+   "retrieval_stage": {
+    "n": 60,
+    "avg": 15.63,
+    "p50": 15.64,
+    "p95": 18.23,
+    "max": 22.53
+   },
+   "rerank": {
+    "n": 60,
+    "avg": 150.55,
+    "p50": 155.29,
+    "p95": 166.38,
+    "max": 174.35
+   },
+   "first_result": {
+    "n": 60,
+    "avg": 15.63,
+    "p50": 15.64,
+    "p95": 18.23,
+    "max": 22.53
+   }
+  },
+  "smart_ai_search": {
+   "retrieval": {
+    "n": 60,
+    "avg": 18.66,
+    "p50": 18.49,
+    "p95": 24.43,
+    "max": 25.89
+   },
+   "rerank": {
+    "n": 60,
+    "avg": 162.93,
+    "p50": 168.27,
+    "p95": 182.39,
+    "max": 198.85
+   },
+   "time_to_first_token": {
+    "n": 60,
+    "avg": 455.66,
+    "p50": 449.32,
+    "p95": 601.71,
+    "max": 676.71
+   },
+   "generation_total": {
+    "n": 60,
+    "avg": 776.45,
+    "p50": 718.9,
+    "p95": 1252.88,
+    "max": 1505.3
+   },
+   "total": {
+    "n": 60,
+    "avg": 958.67,
+    "p50": 908.41,
+    "p95": 1442.05,
+    "max": 1713.46
+   },
+   "avg_prompt_tokens": 998.3,
+   "avg_completion_tokens": 46.2
+  },
+  "interactive": {
+   "query_rewrite": {
+    "n": 45,
+    "avg": 143.66,
+    "p50": 184.43,
+    "p95": 322.32,
+    "max": 405.72
+   },
+   "time_to_first_token": {
+    "n": 45,
+    "avg": 638.26,
+    "p50": 661.86,
+    "p95": 886.01,
+    "max": 956.08
+   },
+   "total": {
+    "n": 45,
+    "avg": 1844.64,
+    "p50": 1500.37,
+    "p95": 4066.99,
+    "max": 4266.26
+   },
+   "query_rewrite_when_triggered": {
+    "n": 29,
+    "avg": 222.92,
+    "p50": 209.32,
+    "p95": 389.57,
+    "max": 405.72
+   }
+  }
+ },
+ "memory": {
+  "process_rss_GiB": 0.29,
+  "gpu_used_MiB(all processes)": 3869.0,
+  "torch_peak_allocated_GiB": 1.39
+ },
+ "system_ram_used_GiB_at_start": 13.16
+}

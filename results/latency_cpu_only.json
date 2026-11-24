@@ -1,0 +1,68 @@
+{
+ "hardware": {
+  "platform": "Windows-10-10.0.26200-SP0",
+  "cpu": "Intel64 Family 6 Model 141 Stepping 1, GenuineIntel",
+  "cpu_threads": 16,
+  "ram_GiB": 15.7,
+  "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "gpu_mem_GiB": 4.0
+ },
+ "device": "cpu",
+ "embedder": "e5-base-ft",
+ "reranker": "reranker-ft",
+ "llm": null,
+ "n_queries": 40,
+ "per_mode": {
+  "quick_search": {
+   "total": {
+    "n": 40,
+    "avg": 0.85,
+    "p50": 0.84,
+    "p95": 1.33,
+    "max": 1.55
+   },
+   "search": {
+    "n": 40,
+    "avg": 0.2,
+    "p50": 0.18,
+    "p95": 0.32,
+    "max": 0.7
+   },
+   "preprocessing": {
+    "n": 40,
+    "avg": 0.03,
+    "p50": 0.02,
+    "p95": 0.04,
+    "max": 0.06
+   }
+  },
+  "retrieval_only(hybrid+rerank)": {
+   "retrieval_stage": {
+    "n": 40,
+    "avg": 44.65,
+    "p50": 44.14,
+    "p95": 50.38,
+    "max": 54.27
+   },
+   "rerank": {
+    "n": 40,
+    "avg": 3905.03,
+    "p50": 3977.02,
+    "p95": 4330.56,
+    "max": 4554.26
+   },
+   "first_result": {
+    "n": 40,
+    "avg": 44.65,
+    "p50": 44.14,
+    "p95": 50.38,
+    "max": 54.27
+   }
+  }
+ },
+ "memory": {
+  "process_rss_GiB": 2.69,
+  "gpu_used_MiB(all processes)": 2407.0,
+  "torch_peak_allocated_GiB": 0.0
+ }
+}

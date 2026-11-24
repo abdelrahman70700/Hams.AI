@@ -1,0 +1,24 @@
+{
+ "validation_hybrid+rerank": {
+  "rrf": [
+   0.9543,
+   1.0,
+   1
+  ],
+  "union": [
+   0.9543,
+   1.0,
+   0
+  ]
+ },
+ "chosen_fusion": "rrf",
+ "rrf_params": {
+  "rrf_k": 5,
+  "w_dense": 5.0,
+  "ndcg@10": 0.8841,
+  "recall@5": 0.9474,
+  "recall@20": 1.0,
+  "mrr": 0.8465,
+  "cross_recall@20": 1.0
+ }
+}

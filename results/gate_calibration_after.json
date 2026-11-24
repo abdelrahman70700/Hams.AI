@@ -1,0 +1,22 @@
+{
+ "embedder": "e5-base-ft",
+ "reranker": "reranker-ft",
+ "n_answerable": 38,
+ "n_unanswerable": 14,
+ "answerable_scores": {
+  "min": 0.11737060546875,
+  "p5": 0.132843017578125,
+  "median": 0.963623046875
+ },
+ "unanswerable_scores": {
+  "max": 0.96826171875,
+  "p95": 0.967626953125,
+  "median": 0.334197998046875
+ },
+ "chosen": {
+  "threshold": 0.09674072265625,
+  "answerable_pass_rate": 1.0,
+  "unanswerable_block_rate": 0.5,
+  "balanced_accuracy": 0.75
+ }
+}

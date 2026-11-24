@@ -1,0 +1,34 @@
+# Core ML (torch is installed separately from the CUDA index, see tools/setup_env.bat)
+sentence-transformers>=5.1,<6
+transformers>=5.23,<6         # gte-multilingual-reranker-base is a native transformers-5 architecture
+accelerate>=1.6
+datasets>=5.2
+huggingface_hub>=1.0
+hf_xet>=1.0                   # faster Hugging Face downloads
+# Retrieval
+faiss-cpu>=1.9
+PyStemmer>=2.2
+numpy>=1.26,<3
+# API / serving
+fastapi>=0.115
+python-multipart>=0.0.9
+uvicorn[standard]>=0.32
+pydantic>=2.9
+httpx>=0.27
+orjson>=3.10
+# Ingestion
+pypdf>=5.0
+pdfplumber>=0.11          # PDF text with glyph positions (Arabic visual->logical repair)
+python-bidi>=0.6          # Unicode bidi algorithm for RTL PDF lines
+python-docx>=1.1
+beautifulsoup4>=4.12
+lxml>=5.3
+markdown>=3.7
+# Evaluation / benchmarking
+sacrebleu>=2.4
+rouge-score>=0.1.2
+pandas>=2.2
+psutil>=6.0
+nvidia-ml-py>=12.560
+tqdm>=4.66
+pyyaml>=6.0

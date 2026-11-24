@@ -1,0 +1,15 @@
+# Dataset preparation settings (scripts/prepare_data.py)
+seed: 13
+corpus_src: data/corpus/src        # authored Markdown sources (single source of truth)
+corpus_kb: data/corpus/kb          # rendered knowledge bank (PDF/DOCX/HTML/MD) that gets ingested
+qa_src: data/qa_src                # facts + queries + reference answers
+qa_extra: data/qa_extra            # unanswerable questions + multi-turn conversations
+processed: data/processed
+chunking:
+  max_words: 120
+  min_words: 40
+# Document-level split, stratified by document language. No query of a test document is ever
+# seen in training, so test retrieval measures generalisation to unseen documents.
+split:
+  validation_docs: {ar: 2, en: 2, mixed: 1}
+  test_docs: {ar: 4, en: 4, mixed: 2}

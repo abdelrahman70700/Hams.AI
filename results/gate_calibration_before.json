@@ -1,0 +1,22 @@
+{
+ "embedder": "e5-base",
+ "reranker": "gte-rerank",
+ "n_answerable": 38,
+ "n_unanswerable": 14,
+ "answerable_scores": {
+  "min": 0.3720703125,
+  "p5": 0.4156494140625,
+  "median": 0.5439453125
+ },
+ "unanswerable_scores": {
+  "max": 0.6298828125,
+  "p95": 0.5556152343749999,
+  "median": 0.42578125
+ },
+ "chosen": {
+  "threshold": 0.3680419921875,
+  "answerable_pass_rate": 1.0,
+  "unanswerable_block_rate": 0.2857142857142857,
+  "balanced_accuracy": 0.6428571428571428
+ }
+}

@@ -1,0 +1,14 @@
+{"qid": "unans:0", "query": "What is the maternity leave duration for female employees?", "qtype": "en", "answer_lang": "en", "near_doc": "hr_leave_policy_ar", "gold": [], "unanswerable": true}
+{"qid": "unans:3", "query": "Who is the CEO of Saraya Living?", "qtype": "en", "answer_lang": "en", "near_doc": "sustainability_report_2025_en", "gold": [], "unanswerable": true}
+{"qid": "unans:6", "query": "What is the noise level of the SmartRest bed motor?", "qtype": "en", "answer_lang": "en", "near_doc": "smartrest_troubleshooting_mx", "gold": [], "unanswerable": true}
+{"qid": "unans:9", "query": "What is the warranty on curtains and blinds?", "qtype": "en", "answer_lang": "en", "near_doc": "policy_warranty_ar", "gold": [], "unanswerable": true}
+{"qid": "unans:12", "query": "What is the repair cost for a SmartRest motor after the warranty expires?", "qtype": "en", "answer_lang": "en", "near_doc": "policy_warranty_ar", "gold": [], "unanswerable": true}
+{"qid": "unans:15", "query": "ما هي مدة إجازة الأمومة للموظفات؟", "qtype": "ar", "answer_lang": "ar", "near_doc": "hr_leave_policy_ar", "gold": [], "unanswerable": true}
+{"qid": "unans:18", "query": "ما اسم الرئيس التنفيذي لشركة سرايا؟", "qtype": "ar", "answer_lang": "ar", "near_doc": "sustainability_report_2025_en", "gold": [], "unanswerable": true}
+{"qid": "unans:21", "query": "ما هو ضمان الستائر؟", "qtype": "ar", "answer_lang": "ar", "near_doc": "policy_warranty_ar", "gold": [], "unanswerable": true}
+{"qid": "unans:24", "query": "ما هي ساعات عمل مستودع الدمام؟", "qtype": "ar", "answer_lang": "ar", "near_doc": "shipping_gcc_en", "gold": [], "unanswerable": true}
+{"qid": "unans:27", "query": "هل يمكن شحن الطلبات إلى الأردن؟", "qtype": "ar", "answer_lang": "ar", "near_doc": "shipping_gcc_en", "gold": [], "unanswerable": true}
+{"qid": "unans:30", "query": "عندكم outdoor furniture للحوش؟", "qtype": "mx", "answer_lang": "ar", "near_doc": "product_sofas_ar", "gold": [], "unanswerable": true}
+{"qid": "unans:33", "query": "فيه maternity leave؟ كم يوم؟", "qtype": "mx", "answer_lang": "ar", "near_doc": "hr_leave_policy_ar", "gold": [], "unanswerable": true}
+{"qid": "unans:36", "query": "What is the كفالة on outdoor umbrellas?", "qtype": "mx", "answer_lang": "en", "near_doc": "policy_warranty_ar", "gold": [], "unanswerable": true}
+{"qid": "unans:39", "query": "كم يعطون الموظف بونص آخر السنة؟", "qtype": "dia", "answer_lang": "ar", "near_doc": "employee_onboarding_en", "gold": [], "unanswerable": true}

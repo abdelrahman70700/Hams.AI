@@ -1,0 +1,167 @@
+- doc: expense_policy_en
+  ev: "City: Riyadh; Staff: SAR 650; Managers and above: SAR 900"
+  a_ar: "حد الفندق في الرياض 650 ريالاً لليلة للموظفين و900 ريال للمدراء فما فوق، شاملة الضرائب."
+  a_en: "The Riyadh hotel limit is SAR 650 per night for staff and SAR 900 for managers and above, including taxes."
+  qs:
+    - [en, "What is the hotel limit per night in Riyadh for a manager?"]
+    - [ar, "كم الحد الأعلى لسعر الفندق في الرياض للموظف العادي؟"]
+    - [mx, "الـhotel cap في جدة كم للـmanagers؟"]
+- doc: expense_policy_en
+  ev: "per diem of SAR 250 per day for domestic travel"
+  a_ar: "البدل اليومي 250 ريالاً للسفر الداخلي و400 ريال للسفر الدولي، ويخصم 60 ريالاً عن كل وجبة مقدمة من عميل أو مؤتمر."
+  a_en: "The per diem is SAR 250/day for domestic travel and SAR 400/day for international travel; meals provided by a client or conference are deducted at SAR 60 each."
+  qs:
+    - [en, "How much is the daily allowance for international business trips?"]
+    - [ar, "كم البدل اليومي للانتداب داخل المملكة؟"]
+    - [dia, "إذا سافرت دوام لدبي كم يعطوني بدل يومي؟"]
+- doc: expense_policy_en
+  ev: "Claims submitted after 60 days are not reimbursed"
+  a_ar: "تقدم مطالبات المصاريف مع الإيصالات خلال 30 يوماً من العودة، ولا تعوض المطالبات بعد 60 يوماً، وتصرف مع الراتب إذا اعتمدت قبل يوم 20 من الشهر."
+  a_en: "Expense claims must be submitted with receipts within 30 days of returning; claims after 60 days are not reimbursed, and approved claims before the 20th are paid with that month's salary."
+  qs:
+    - [en, "What is the deadline for submitting expense claims?"]
+    - [ar, "نسيت أرفع مصاريف رحلة عمل من شهرين، هل يتم تعويضي؟"]
+- doc: expense_policy_en
+  ev: "business class for flights longer than 4 hours"
+  a_ar: "الدرجة السياحية للرحلات أقل من 4 ساعات، ويمكن للمدراء فما فوق حجز درجة رجال الأعمال للرحلات الأطول من 4 ساعات."
+  a_en: "Economy class for flights under 4 hours; managers and above may fly business class on flights longer than 4 hours."
+  qs:
+    - [en, "Can managers fly business class?"]
+    - [ar, "هل يحق للمدير السفر على درجة رجال الأعمال؟"]
+- doc: it_security_policy_en
+  ev: "Passwords must be at least 14 characters long"
+  a_ar: "كلمات المرور 14 حرفاً على الأقل، والمصادقة الثنائية إلزامية للبريد والـCRM ونظام الموارد البشرية والـVPN، ولا تنتهي كلمات المرور دورياً بل تغير فوراً عند الاشتباه باختراق."
+  a_en: "Passwords must be at least 14 characters; MFA is mandatory for email, CRM, HR system and VPN; passwords do not expire on a schedule but must be changed immediately on suspected compromise."
+  qs:
+    - [en, "What is the minimum password length?"]
+    - [ar, "كم يجب أن يكون طول كلمة المرور وهل يجب تغييرها كل فترة؟"]
+- doc: it_security_policy_en
+  ev: "Class: Restricted"
+  a_ar: "البيانات المقيدة مثل بيانات الدفع ومفاتيح الأمان لا يصل إليها إلا أدوار محددة ولا ترسل بالبريد أبداً، والبيانات السرية مثل بيانات العملاء والعقود والرواتب تشفر عند إرسالها خارج الشركة."
+  a_en: "Restricted data (payment data, security keys) is limited to named roles and never sent by email; Confidential data (customer data, contracts, salaries) must be encrypted when sent outside the company."
+  qs:
+    - [en, "Can I send payment data by email?"]
+    - [ar, "كيف أتعامل مع بيانات العملاء السرية عند إرسالها خارج الشركة؟"]
+- doc: it_security_policy_en
+  ev: "within 1 hour of discovery"
+  a_ar: "يجب الإبلاغ عن التصيد المشتبه أو فقدان الجهاز لمكتب خدمة تقنية المعلومات خلال ساعة عبر التحويلة 4400 أو بوابة ServiceDesk، ويتم مسح الجهاز المفقود عن بعد."
+  a_en: "Report suspected phishing or a lost device to the IT service desk within 1 hour, via extension 4400 or the ServiceDesk portal; lost devices are wiped remotely."
+  qs:
+    - [en, "What should I do if I lose my company laptop?"]
+    - [ar, "ضاع لابتوب العمل، خلال كم يجب أن أبلغ؟"]
+- doc: product_office_chairs_en
+  ev: "Model: ErgoPro Plus; Code: EP-300"
+  a_ar: "كرسي ErgoPro Plus موديل EP-300 يتحمل 130 كجم وسعره 1,290 ريالاً، مع دعم قطني قابل للتعديل ومساند ذراع ثلاثية الأبعاد وتعديل عمق المقعد."
+  a_en: "The ErgoPro Plus (EP-300) supports 130 kg, costs SAR 1,290 and has adjustable lumbar support, 3D armrests and seat depth adjustment."
+  qs:
+    - [en, "What is the price and weight capacity of the ErgoPro Plus chair?"]
+    - [ar, "كم سعر كرسي ErgoPro Plus وكم وزن يتحمل؟"]
+    - [mx, "الكرسي EP-300 فيه lumbar support؟"]
+- doc: product_office_chairs_en
+  ev: "Model: ErgoPro Executive"
+  a_ar: "كرسي ErgoPro Executive موديل EP-700 يتحمل 150 كجم وسعره 2,450 ريالاً، بتنجيد جلدي ومسند رأس، ومتوفر بالجلد البني مقابل 200 ريال إضافية."
+  a_en: "The ErgoPro Executive (EP-700) supports 150 kg, costs SAR 2,450, has leather upholstery and a headrest, and tan leather costs SAR 200 extra."
+  qs:
+    - [en, "Which ErgoPro chair has a headrest?"]
+    - [ar, "كم سعر كرسي المدير الجلدي ErgoPro Executive؟"]
+- doc: product_office_chairs_en
+  ev: "12% volume discount"
+  a_ar: "شراء أكثر من 50 كرسياً ErgoPro يحصل على خصم كمية 12%."
+  a_en: "Outright purchases of more than 50 ErgoPro chairs get a 12% volume discount."
+  qs:
+    - [en, "Is there a bulk discount on office chairs?"]
+    - [ar, "هل يوجد خصم عند شراء 60 كرسي مكتب؟"]
+- doc: product_standing_desks_en
+  ev: "Model: ErgoPro Rise Duo"
+  a_ar: "مكتب ErgoPro Rise Duo موديل ED-220 بمحركين، ارتفاعه من 62 إلى 127 سم، ويتحمل 120 كجم، وسعره 2,990 ريالاً."
+  a_en: "The ErgoPro Rise Duo (ED-220) is dual-motor, adjusts from 62 to 127 cm, holds 120 kg and costs SAR 2,990."
+  qs:
+    - [en, "What is the height range of the ErgoPro Rise Duo desk?"]
+    - [ar, "كم أقصى وزن يتحمله المكتب الكهربائي ED-220؟"]
+    - [mx, "أبغى standing desk بموتورين، وش الموديل وكم سعره؟"]
+- doc: product_standing_desks_en
+  ev: "shows \"HOT\" on the keypad"
+  a_ar: "ظهور HOT على لوحة المكتب يعني أن المحرك وصل حد التشغيل؛ يجب ألا يعمل أكثر من دقيقتين كل 18 دقيقة، وينتظر حتى يبرد."
+  a_en: "\"HOT\" on the keypad means the motor hit its duty cycle limit (max 2 minutes of running per 18 minutes); wait for the cool-down."
+  qs:
+    - [en, "My standing desk keypad shows HOT. What does it mean?"]
+    - [ar, "المكتب الكهربائي يعرض كلمة HOT ولا يتحرك، ما السبب؟"]
+- doc: product_standing_desks_en
+  ev: "Motors and controller: 3 years"
+  a_ar: "ضمان المكاتب الكهربائية: 5 سنوات على الإطار، و3 سنوات على المحركات ووحدة التحكم، وسنتان على سطح المكتب."
+  a_en: "Standing desk warranty: frame 5 years, motors and controller 3 years, desktop 2 years."
+  qs:
+    - [en, "What is the warranty on standing desk motors?"]
+    - [ar, "كم ضمان محرك المكتب الكهربائي؟"]
+- doc: assembly_manual_wardrobe_en
+  ev: "Fix the anti-tip bracket (bag F) to the wall"
+  a_ar: "تثبيت دعامة منع الانقلاب (الكيس F) على الجدار خطوة إلزامية للسلامة عند تركيب دولاب لمار LW-3D."
+  a_en: "Fixing the anti-tip bracket from bag F to the wall is mandatory for safety when assembling the LW-3D wardrobe."
+  qs:
+    - [en, "Is the wall anchor mandatory when assembling the Lamar wardrobe?"]
+    - [ar, "هل يجب تثبيت الدولاب في الجدار؟"]
+- doc: assembly_manual_wardrobe_en
+  ev: "takes about 2.5 hours"
+  a_ar: "تركيب دولاب لمار يحتاج شخصين بالغين ونحو ساعتين ونصف، بأدوات مفك فيليبس ومطرقة مطاطية ومفتاح ألن 4 مم، وأبعاده 150×220×60 سم ووزنه 118 كجم."
+  a_en: "Assembling the Lamar wardrobe needs two adults and about 2.5 hours, with a Phillips screwdriver, rubber mallet and the supplied 4 mm Allen key; it measures 150×220×60 cm and weighs 118 kg."
+  qs:
+    - [en, "How long does it take to assemble the Lamar 3-door wardrobe and what tools are needed?"]
+    - [ar, "كم وزن دولاب لمار ثلاثة أبواب وما أبعاده؟"]
+- doc: assembly_manual_wardrobe_en
+  ev: "use the adjustable feet at the base"
+  a_ar: "إذا لم تغلق الأبواب بشكل متساو فغالباً الأرضية غير مستوية؛ استخدم الأرجل القابلة للتعديل لتسوية الدولاب قبل ضبط المفصلات."
+  a_en: "If the doors don't close evenly the floor is probably uneven: level the wardrobe with the adjustable feet before adjusting the hinges."
+  qs:
+    - [en, "The wardrobe doors don't close evenly, how do I fix it?"]
+    - [ar, "أبواب الدولاب غير متساوية بعد التركيب، ماذا أفعل؟"]
+- doc: assembly_manual_wardrobe_en
+  ev: "Self-assembly does not void the warranty"
+  a_ar: "التركيب الذاتي لا يلغي الضمان، لكن الأضرار الناتجة أثناء التركيب الذاتي غير مشمولة."
+  a_en: "Self-assembly does not void the warranty, but damage caused during self-assembly is not covered."
+  qs:
+    - [en, "Will assembling the wardrobe myself void the warranty?"]
+    - [ar, "إذا ركبت الدولاب بنفسي هل يسقط الضمان؟"]
+- doc: shipping_gcc_en
+  ev: "Country: Kuwait"
+  a_ar: "الشحن إلى الكويت (مدينة الكويت وحولي والأحمدي) بـ650 ريالاً للطلب ويستغرق 7 إلى 12 يوم عمل."
+  a_en: "Shipping to Kuwait (Kuwait City, Hawalli, Ahmadi) costs SAR 650 per order and takes 7–12 business days."
+  qs:
+    - [en, "Do you ship to Kuwait and how much does it cost?"]
+    - [ar, "هل توصلون إلى الكويت وكم الرسوم؟"]
+    - [dia, "أبي أطلب غرفة نوم لأختي بالكويت، توصلون هناك؟"]
+- doc: shipping_gcc_en
+  ev: "Oman is not served at the moment"
+  a_ar: "لا يتم الشحن إلى عُمان حالياً، والدول المخدومة هي البحرين والكويت والإمارات وقطر."
+  a_en: "Oman is not served at the moment; served countries are Bahrain, Kuwait, the UAE and Qatar."
+  qs:
+    - [en, "Can I order furniture to Muscat, Oman?"]
+    - [ar, "هل يوجد شحن إلى سلطنة عمان؟"]
+- doc: shipping_gcc_en
+  ev: "Saudi VAT is removed at checkout"
+  a_ar: "في شحنات الخليج تحذف ضريبة القيمة المضافة السعودية عند الدفع، ويدفع العميل ضريبة بلد الوجهة والجمارك لشركة الشحن عند الاستلام، ولا يشمل التركيب، والإرجاع للمعيب فقط."
+  a_en: "For GCC shipments Saudi VAT is removed at checkout; the customer pays destination VAT and customs to the courier, installation is not included, and only defective items can be returned."
+  qs:
+    - [en, "Who pays customs duties for orders shipped to the UAE?"]
+    - [ar, "هل أستطيع إرجاع منتج لم يعجبني بعد شحنه إلى البحرين؟"]
+- doc: faq_online_orders_en
+  ev: "within 2 hours of placing the order"
+  a_ar: "يمكن تعديل الأصناف أو الألوان أو العنوان خلال ساعتين من الطلب من صفحة طلباتي، وبعدها يتم التواصل مع خدمة العملاء ويمكن التعديل فقط إذا لم يغادر الطلب المستودع."
+  a_en: "Items, colours or address can be changed within 2 hours from My Orders; after that, contact customer service, and changes are only possible before dispatch."
+  qs:
+    - [en, "Can I change the colour of my order after placing it?"]
+    - [ar, "هل يمكن تعديل الطلب بعد إتمامه؟"]
+    - [mx, "طلبت كنبة وأبي أغير اللون، فيه وقت أعدل الـorder؟"]
+- doc: faq_online_orders_en
+  ev: "You only pay the delivery fee once per order"
+  a_ar: "قد يصل الطلب على دفعات إذا كانت الأصناف في مستودعات مختلفة أو مصنوعة حسب الطلب، ويدفع العميل رسوم التوصيل مرة واحدة فقط لكل طلب."
+  a_en: "Orders may arrive in several deliveries if items are in different warehouses or made to order, but the delivery fee is paid only once per order."
+  qs:
+    - [en, "Why did my order arrive in two deliveries, and will I pay delivery twice?"]
+    - [ar, "وصلني جزء من الطلب فقط، هل سأدفع رسوم توصيل مرة ثانية؟"]
+- doc: faq_online_orders_en
+  ev: "The driver calls you about 60 minutes before arrival"
+  a_ar: "يصل رقم التتبع برسالة عند خروج الطلب من المستودع، ويتصل السائق قبل الوصول بنحو 60 دقيقة."
+  a_en: "You get a tracking number by SMS when the order leaves the warehouse, and the driver calls about 60 minutes before arrival."
+  qs:
+    - [en, "Will the driver call before delivery?"]
+    - [ar, "هل يتصل المندوب قبل وصوله؟"]
