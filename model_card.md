@@ -43,7 +43,7 @@ The gte models require `trust_remote_code` (custom architecture code from `Aliba
 | Hyper-parameters | 4 epochs, batch 64 (micro-batch 16), lr 2e-5 linear decay, warmup 10%, weight decay 0.01, max length 256, bf16 autocast, `NO_DUPLICATES` batch sampler, seed 42 |
 | Result | Validation nDCG@10 0.660 → **0.890**, Recall@5 0.868 → 0.974; 9.7 min on the RTX 3050 Laptop GPU, peak 3.47 GiB |
 | Model selection | Best epoch by validation nDCG@10 (`InformationRetrievalEvaluator` over the full corpus). |
-| Reproducibility | `configs/training_config.yaml`; `models/e5-base-saraya-ft/training_report.json` stores config, data hash, before/after validation metrics, peak GPU memory and training time. |
+| Reproducibility | `configs/training_config.yaml`; `results/embedding_training_report.json` stores config, data hash, before/after validation metrics, peak GPU memory and training time. |
 
 ## Fine-tuning: reranker
 
@@ -55,7 +55,7 @@ The gte models require `trust_remote_code` (custom architecture code from `Aliba
 | Negatives | Candidates of the deployed first stage (BM25 + fine-tuned e5 → RRF) on **training documents only**; the top-ranked non-gold candidate is skipped and any candidate the *base* reranker scores within 1 logit of the positive is dropped as a probable false negative (RocketQA-style denoising), then up to 4 negatives per query |
 | Hyper-parameters | 2 epochs, lr **2e-6**, warmup 10%, weight decay 0.01, batch 8 × grad-accumulation 4, max length 384, gradient clipping 1.0 |
 | Selection | Validation MRR@10 evaluated every 20 steps on the real top-20 candidates; best checkpoint kept; best run across the sweep chosen by `scripts/select_reranker.py` |
-| Result | Validation MRR@10 0.878 → **0.939**; selected checkpoint `models/gte-reranker-saraya-ft_lr2e6_dn` |
+| Result | Validation MRR@10 0.878 → **0.939**; selected run `lr2e6_dn` (report: `results/reranker_training_report_lr2e6_dn.json`), published as [AbdelrahmanHassan/hams-gte-reranker-ar-en](https://huggingface.co/AbdelrahmanHassan/hams-gte-reranker-ar-en) |
 
 ### What went wrong first, and how it was fixed (documented for transparency)
 The first run (lr 2e-5, bf16, 7 un-filtered hard negatives) **collapsed**: validation MRR@10 fell from

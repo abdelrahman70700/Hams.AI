@@ -225,6 +225,12 @@ The same steps as double-clickable scripts, in order: `tools\run_A1_baseline.bat
 `run_C5_reranker_final.bat`, `run_C4_finalize.bat`, `run_D2_generation.bat`, `run_E_latency.bat`, `run_E3_concurrency.bat`
 (each writes a log to `tools\logs\`).
 
+The trained weights are not in the repository (`models/` is git-ignored, about 1.7 GB). They are published on
+Hugging Face: [hams-e5-base-ar-en-retrieval](https://huggingface.co/AbdelrahmanHassan/hams-e5-base-ar-en-retrieval)
+(local path `models/e5-base-saraya-ft`) and [hams-gte-reranker-ar-en](https://huggingface.co/AbdelrahmanHassan/hams-gte-reranker-ar-en)
+(local path `models/gte-reranker-saraya-ft_lr2e6_dn`), byte-identical to the checkpoints behind the results.
+Step 4 recreates them locally; training reports are in `results/*_training_report*.json`.
+
 Docker is intentionally not used: `tools/setup_env.bat` + `tools/start_all.bat` are the self-hosted
 reproduction path. The code itself is OS-independent (Python 3.11); on Linux, run the same Python
 scripts and start `llama-server` with the flags in `tools/start_llm.bat`.
